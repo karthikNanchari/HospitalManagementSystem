@@ -1,0 +1,212 @@
+﻿
+@{
+    ViewBag.Title = "NurseViewRooms";
+    var grid = new WebGrid(Model);
+}
+
+<h2>NurseViewRooms</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="karthik" content="">
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+
+    <script>
+
+
+        function editDoctorDetails() {
+            var x = document.getElementById("editDoctorDetails");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        $(function () {
+            $('.edit-mode').hide();
+
+            $('.edit-user, .cancel-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                tr.find('.edit-mode, .display-mode').toggle();
+            });
+
+
+            @*$('.save-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                var RoomID = tr.find("#lblRoomID").html();
+                var PatientID = tr.find("#lblPatientID").html();
+                var Timing = tr.find("#lblTimings").html();
+                var Date = tr.find("#lblDate").html();
+                var IsBooked = tr.find("#isBooked").find(":selected").text();
+                 //if(IsBooked)
+
+                var roomModel =
+                    {
+                        "room_ID": RoomID,
+                        "patient_ID": PatientID,
+                        "isBooked": IsBooked,
+                        "date": Date,
+                        "timings": Timing
+                    };
+                $.ajax({
+                    url: '/Administrator/UpdateRooms',
+                    data: JSON.stringify(roomModel),
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function () {
+                        location.reload();
+                        //$.get('@Url.Action("ViewRooms", "Administrator")', {}, function () { })
+                    }
+                });
+            });*@
+
+            $('.edit-user').on('click', function () {
+
+            });
+
+        })
+    </script>
+    <style type="text/css">
+        .edit-mode {
+            width: 100%;
+        }
+
+        .edit-user {
+            width: 100%;
+        }
+
+            .edit-user display-mode {
+                width: 100%;
+            }
+
+        .save-user edit-mode {
+            width: 100%;
+        }
+
+        .display-mode {
+            width: 100%;
+        }
+
+        .cancel-user {
+            width: 100%;
+        }
+
+        .webgrid-table {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            width: 110%;
+            display: table;
+            border-collapse: collapse;
+            border: solid #C5C5C5;
+            background-color: white;
+        }
+
+            .webgrid-table td, th {
+                border: 1px solid #C5C5C5;
+                padding: 3px 7px 2px;
+                /*width: 100%;*/
+            }
+
+        .webgrid-header, .webgrid-header a {
+            background-color: #0094ff;
+            color: #ffffff;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .webgrid-footer {
+        }
+
+        .webgrid-row-style {
+            padding: 3px 7px 2px;
+        }
+
+        .webgrid-alternating-row {
+            background-color: azure;
+            padding: 3px 7px 2px;
+        }
+
+        .col1Width {
+            width: 55px;
+        }
+
+        .col2Width {
+            width: 220px;
+        }
+    </style>
+</head>
+
+<body>
+
+    @section ContentBreadCrumBar
+    {
+        <a class="glyphicon glyphicon-home"> Nurse View Room Details</a>
+    }
+
+
+    <div id="gridContent" style=" padding:20px; ">
+        @grid.GetHtml(
+        tableStyle: "webgrid-table",
+        headerStyle: "webgrid-header",
+        footerStyle: "webgrid-footer",
+        alternatingRowStyle: "webgrid-alternating-row",
+        selectedRowStyle: "webgrid-selected-row",
+        rowStyle: "webgrid-row-style",
+        mode: WebGridPagerModes.All,
+        columns:
+            grid.Columns(
+
+             grid.Column("RoomID", format: @<text>  <span class="display-mode"><label id="lblRoomID">@item.room_ID</label></span><label id="RoomID" class="edit-mode">@item.room_ID </label></text>, style: "col2Width"),
+
+             grid.Column("Patient Name", format:@<text>  <span class="display-mode"> <label id="lblPatientID">@item.patientFirstName</label> </span><label class="edit-mode">@item.patientFirstName</label> </text>, style: "col2Width"),
+
+              grid.Column("Timing", format: @<text>  <span class="display-mode"><label id="lblTimings">@((DateTime.Parse(item.timings)).ToString("HH:mm"))</label> </span><label class="edit-mode">@((DateTime.Parse(item.timings)).ToString("HH:mm"))</label> </text>, style: "col2Width"),
+
+             grid.Column("Date", format:@<text>  <span class="display-mode"><label id="lblDate">@((item.date).ToString("MM-dd-yyyy"))</label></span><label class="edit-mode">@((item.date).ToString("MM-dd-yyyy"))</label> </text>, style: "col2Width"),
+
+             grid.Column("IsBooked", format: @<text>
+
+                    <span class="display-mode"><label id="IsBooked">@item.isBooked</label></span>
+                    @if (item.isBooked)
+                    {
+                        <select id="isBooked" class="edit-mode" value="@item.isBooked">
+                            <option value="true">True</option>
+                            <option value="false">False</option>
+                        </select>
+                    }
+
+            </text>, style: "col1Width")
+
+             @*grid.Column("Action", format: @<text>
+                    <button class="edit-user display-mode">Edit</button>
+                    <form method="post" action="@Url.Action("UpdateRooms", "Administrator", new { roomID = @item.room_ID})">
+                        <button class="save-user edit-mode">Save</button>
+
+                    </form>
+                    <button class="cancel-user edit-mode">Cancel</button>
+            </text>, style: "col1Width", canSort: false)*@
+        ))
+    </div>
+
+
+    @*<input type="button" class="submitBtn" value="Book Room" style="" onclick="@("window.location.href='" + @Url.Action("viewNewBooking", "Administrator" ) +"'");" />*@
+
+
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+</body>
+
+</html>
+
+
+

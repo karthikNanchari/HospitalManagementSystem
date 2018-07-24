@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "RequestReport";
+}
+<h4>Doctor Request Report</h4>
+@model Models.AppointmentModel
+
+
+<!Doctype Html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+        function ViewAppointmentsForReport() {
+            var patientID = $("#patientID").val();
+            console.log(patientID);
+            $.ajax({
+                url: '/Doctor/ViewAppointmentsForReport',
+                data: "{ 'patientID':'" + patientID + "'}",
+                type: 'POST',
+                contentType: 'application/json; charset=utf-8',
+                success: function (data) {
+                    $("#appointment_ID").empty();
+                    var e = new Option("-Select-", "-Select-");
+                    $("#appointment_ID").append(e);
+                    $.each(data, function (i, obj) {
+                        var p = new Option(obj.Text, obj.Value);
+                        $("#appointment_ID").append(p);
+                    });
+                }
+            })
+        }
+
+
+           
+
+    </script>
+</head>
+<body>
+
+    <table border="1" id="detailsTable" style="width:100%">
+        <thead>
+            <tr>
+                <th>Select Patient</th>
+                <th>Select Appointment</th>
+                <th>Request Report Notes</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tr>
+            @using (Html.BeginForm("ReqNewReport", "Doctor", FormMethod.Post, new { enctype = "multipart/form" }))
+            {
+                <td>&nbsp;&nbsp;@Html.DropDownListFor(i => i.paitent_ID, new SelectList(Model.dropDown, "Value", "Text"), "--Select--", new { @id = "patientID", onclick = "ViewAppointmentsForReport()" })</td>
+                <td>&nbsp;&nbsp;@Html.DropDownListFor(i => i.appointment_ID, new SelectList(Model.dropDown, "Value", "Text"), "--Select--", new { @id = "appointment_ID" })</td>
+                <td>@Html.TextAreaFor(i => i.reqReportNotes)</td>
+                <td><input type="submit" onclick="" value="Submit" /></td>
+            }
+        </tr>
+    </table>
+</body>
+</html>

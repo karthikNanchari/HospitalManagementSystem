@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Models.NotificationsModel>
+@{
+    ViewBag.Title = "PatientHome";
+}
+
+@section ContentBreadCrumBar
+{
+    <a class="glyphicon glyphicon-home">Patient Home</a>
+}
+
+@if (Model != null)
+{
+    <div>
+        @Html.Partial("_NotificationHome", Model)
+    </div>
+}

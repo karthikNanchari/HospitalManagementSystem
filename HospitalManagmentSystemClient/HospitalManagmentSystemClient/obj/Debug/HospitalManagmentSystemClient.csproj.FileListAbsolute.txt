@@ -1,0 +1,336 @@
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\ApplicationInsights.config
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csc.exe
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csc.exe.config
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csc.rsp
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csi.exe
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csi.rsp
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.AppContext.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\vbc.exe
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\vbc.exe.config
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\vbc.rsp
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\VBCSCompiler.exe
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\HospitalManagmentSystemClient.dll.config
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\HospitalManagmentSystemClient.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\HospitalManagmentSystemClient.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Antlr3.Runtime.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Client_Api.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Elmah.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Elmah.Mvc.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.Core.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.MemoryStorage.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.SqlServer.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.Web.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Owin.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Models.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Newtonsoft.Json.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Owin.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Postal.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\RazorEngine.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Formatting.Compact.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.File.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.RollingFile.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.Seq.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.Trace.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Net.Http.Formatting.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Helpers.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Http.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Http.WebHost.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Mvc.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Optimization.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Razor.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.Razor.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\WebGrease.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Data.SqlServerCe.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Client_Api.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Models.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.Core.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.SqlServer.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Owin.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Postal.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\RazorEngine.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\RazorEngine.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Formatting.Compact.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.File.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.PeriodicBatching.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.RollingFile.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.Seq.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.Trace.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Net.Http.Formatting.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Http.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Http.WebHost.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Helpers.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Mvc.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Optimization.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Razor.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.Razor.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Antlr3.Runtime.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Newtonsoft.Json.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.Web.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\es\Hangfire.Core.resources.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\zh\Hangfire.Core.resources.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.csprojResolveAssemblyReference.cache
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.pdb
+C:\Users\nkaru\Desktop\Karthik\Masters\Summer\Summer1\AdvanceProject\Hospital Management System\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.dll
+C:\Users\nkaru\Desktop\Karthik\Masters\Summer\Summer1\AdvanceProject\Hospital Management System\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\ApplicationInsights.config
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csc.exe
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csc.exe.config
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csc.rsp
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csi.exe
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csi.rsp
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.AppContext.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\vbc.exe
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\vbc.exe.config
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\vbc.rsp
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\VBCSCompiler.exe
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\HospitalManagmentSystemClient.dll.config
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\HospitalManagmentSystemClient.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\HospitalManagmentSystemClient.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Antlr3.Runtime.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Client_Api.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Elmah.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Elmah.Mvc.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.Core.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.MemoryStorage.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.SqlServer.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.Web.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Owin.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Models.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Newtonsoft.Json.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Owin.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Postal.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\RazorEngine.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Formatting.Compact.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.File.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.RollingFile.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.Seq.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.Trace.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Net.Http.Formatting.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Helpers.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Http.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Http.WebHost.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Mvc.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Optimization.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Razor.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.Razor.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\WebGrease.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Data.SqlServerCe.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Client_Api.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Models.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.Core.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.SqlServer.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Owin.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Postal.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\RazorEngine.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\RazorEngine.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Formatting.Compact.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.File.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.PeriodicBatching.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.RollingFile.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.Seq.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.Trace.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Net.Http.Formatting.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Http.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Http.WebHost.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Helpers.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Mvc.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Optimization.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Razor.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.Razor.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Antlr3.Runtime.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Newtonsoft.Json.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.Web.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\es\Hangfire.Core.resources.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\zh\Hangfire.Core.resources.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.csprojResolveAssemblyReference.cache
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.pdb
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\ApplicationInsights.config
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csc.exe
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csc.exe.config
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csc.rsp
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csi.exe
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\csi.rsp
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.AppContext.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\vbc.exe
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\vbc.exe.config
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\vbc.rsp
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\VBCSCompiler.exe
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\HospitalManagmentSystemClient.dll.config
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\HospitalManagmentSystemClient.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\HospitalManagmentSystemClient.pdb
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Antlr3.Runtime.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Client_Api.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Elmah.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Elmah.Mvc.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.Core.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.MemoryStorage.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.SqlServer.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.Web.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.ApplicationInsights.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Owin.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Models.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Newtonsoft.Json.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Owin.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Postal.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\RazorEngine.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Formatting.Compact.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.File.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.RollingFile.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.Seq.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.Trace.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Net.Http.Formatting.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Helpers.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Http.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Http.WebHost.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Mvc.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Optimization.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Razor.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.Razor.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\WebGrease.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Client_Api.pdb
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Models.pdb
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.Core.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Hangfire.SqlServer.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Owin.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Postal.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\RazorEngine.pdb
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\RazorEngine.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Formatting.Compact.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.File.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.PeriodicBatching.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.RollingFile.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.Seq.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Serilog.Sinks.Trace.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Net.Http.Formatting.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Http.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Http.WebHost.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Helpers.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Mvc.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Optimization.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.Razor.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\System.Web.WebPages.Razor.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Antlr3.Runtime.pdb
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Newtonsoft.Json.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.ApplicationInsights.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\Microsoft.AI.Web.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\es\Hangfire.Core.resources.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\bin\zh\Hangfire.Core.resources.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.csprojAssemblyReference.cache
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.csproj.CoreCompileInputs.cache
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.csproj.CopyComplete
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\HospitalManagmentSystemClient\obj\Debug\HospitalManagmentSystemClient.pdb

@@ -1,0 +1,22 @@
+﻿@model Models.DoctorModel
+@{
+    ViewBag.Title = "NurseDoctor";
+}
+
+<h3>Nurse Select Doctor</h3>
+
+<table>
+    <tr>
+        @using (Html.BeginForm("ViewDoctorAppointments", "Nurse", FormMethod.Post, new { enctype = "multipart/form" }))
+        {
+            <td>&nbsp;&nbsp;@Html.DropDownListFor(i =>i.pid, new SelectList(Model.dropDownDoc,"Value","Text"), "--Select--")</td>
+
+                    <td><input type="submit" value="Submit" /></td>
+        }
+    </tr>
+</table>
+
+
+
+
+

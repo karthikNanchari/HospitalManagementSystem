@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title  HMS</title>
+    <link href="~/Scripts/sideNavBar.css" rel="stylesheet" />
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script type="text/javascript">
+
+    history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };
+
+
+        window.onload = function () {
+            debugger;
+            display_ct();
+        }
+
+        function display_c() {
+            var refresh = 1000; // Refresh rate in milli seconds
+            mytime = setTimeout('display_ct()', refresh)
+        }
+        function display_ct() {
+            var x = new Date()
+            var x1 = x.getMonth() + "/" + x.getDate() + "/" + x.getYear();
+            x1 = x1 + " - " + x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds();
+            document.getElementById('time').innerHTML = x1;
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-collapse collapse">
+        </div>
+       
+    </div>
+            <div>
+                @RenderBody()
+            </div>
+
+    <div class="footer text-center navbar-fixed-bottom" style="height:7%">
+
+        Copyright: <a href="http://karthiknanchari.com/"> &copy; Karthik Nanchari  @DateTime.Now.Year </a>
+
+    </div>
+
+    <script>
+        window.onload = function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        }
+    </script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+
+

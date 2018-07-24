@@ -1,0 +1,209 @@
+﻿@{
+    ViewBag.Title = "PatientPayments";
+}
+
+@{
+    var grid = new WebGrid(Model);
+}
+
+
+<!Doctype Html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+
+        function editPatientDetails() {
+            var x = document.getElementById("editPatientDetails");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        $(function () {
+            $('.edit-mode').hide();
+
+
+            $('.edit-user, .cancel-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                tr.find('.edit-mode, .display-mode').toggle();
+            });
+
+
+            $('.save-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                var PatPatientID = $("#lblPatientID").html();
+                var PatPaymentID = $("#lblPaymentID").html();
+                var PatMedicalFee = $("#lblMedicalFee").html();
+                var PatHospitalFee = $("#lblHospitalFee").html();
+                var PatPaidAmount = document.getElementById("paidPayment").value;
+                var PatDate = $("#lblDate").html();
+                var PatTotalAmount = $("#lblTotalAmount").html();
+                var PatBillID = $("#lblBillID").html();
+
+
+                if (PatPaidAmount > PatTotalAmount) { alert("Cannot Pay More Than Total Amount"); return;}
+
+
+
+                var PatientModel =
+                    {
+                        "patient_ID": PatPatientID,
+                        "Payment_ID": PatPaymentID,
+                        "Medicines_Fee": PatMedicalFee,
+                        "Hospital_Fee": PatHospitalFee,
+                        "Paid_Amount": PatPaidAmount,
+                        "Date_Time": PatDate,
+                        "Total_Amount": PatTotalAmount,
+                        "bill_ID": PatBillID
+                    };
+                $.ajax({
+                    url: '/Patient/PatientPayPayments',
+                    data: JSON.stringify(PatientModel),
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function () {
+                        location.reload();
+                    }
+                });
+
+            });
+
+            $('.edit-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+               
+
+            });
+
+
+        })
+    </script>
+    <style type="text/css">
+        .edit-mode {
+            width: 100%;
+        }
+
+        .edit-user {
+            width: 100%;
+        }
+
+            .edit-user display-mode {
+                width: 100%;
+            }
+
+        .save-user edit-mode {
+            width: 100%;
+        }
+
+        .display-mode {
+            width: 100%;
+        }
+
+        .cancel-user {
+            width: 100%;
+        }
+
+        .webgrid-table {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            width: 110%;
+            display: table;
+            border-collapse: collapse;
+            border: solid px #C5C5C5;
+            background-color: white;
+        }
+
+            .webgrid-table td, th {
+                border: 1px solid #C5C5C5;
+                padding: 3px 7px 2px;
+                /*width: 100%;*/
+            }
+
+        .webgrid-header, .webgrid-header a {
+            background-color: #0094ff;
+            color: #ffffff;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .webgrid-footer {
+        }
+
+        .webgrid-row-style {
+            padding: 3px 7px 2px;
+        }
+
+        .webgrid-alternating-row {
+            background-color: azure;
+            padding: 3px 7px 2px;
+        }
+
+        .col1Width {
+            width: 55px;
+        }
+
+        .col2Width {
+            width: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gridContent" style=" padding:20px; ">
+        @grid.GetHtml(
+        tableStyle: "webgrid-table",
+        headerStyle: "webgrid-header",
+        footerStyle: "webgrid-footer",
+        alternatingRowStyle: "webgrid-alternating-row",
+        selectedRowStyle: "webgrid-selected-row",
+        rowStyle: "webgrid-row-style",
+        mode: WebGridPagerModes.All,
+        columns:
+            grid.Columns(
+             grid.Column("Payment ID", format: @<text>  <span class="display-mode">@item.Payment_ID </span><label id="lblPaymentID" class="edit-mode">@item.Payment_ID</label> </text>, style: "col1Width"),
+             
+             grid.Column("Billin ID", format: @<text>  <span class="display-mode">@item.bill_ID </span><label id="lblBillID" class="edit-mode">@item.bill_ID </label> </text>, style: "col1Width"),
+
+             grid.Column("PatientID", format: @<text>  <span class="display-mode">@item.Patient_ID </span><label id="lblPatientID" class="edit-mode">@item.Patient_ID</label> </text>, style: "col1Width"),
+             
+                grid.Column("Room ID", format: @<text>  <span class="display-mode">@item.roomID </span><label id="lblRoomID" class="edit-mode">@item.roomID</label> </text>, style: "col1Width"),
+
+             grid.Column("MedicalFee", format: @<text>  <span class="display-mode">@item.Medicines_Fee </span><label id="lblMedicalFee" class="edit-mode">@item.Medicines_Fee</label> </text>, style: "col1Width"),
+
+                grid.Column("HospitalFee", format: @<text>  <span class="display-mode">@item.Hospital_Fee </span><label id="lblHospitalFee" class="edit-mode">@item.Hospital_Fee</label> </text>, style: "col1Width"),
+                
+                grid.Column("HospitalFee", format: @<text>  <span class="display-mode">@item.room_Fee </span><label id="lblRoomFee" class="edit-mode">@item.room_Fee</label> </text>, style: "col1Width"),
+
+                grid.Column("  Date & Time", format: @<text>  <span class="display-mode">@item.Date </span><label id="lblDate" class="edit-mode">@item.Date</label> </text>, style: "col2Width"),
+
+             grid.Column("Total Amount", format: @<text>  <span class="display-mode">@item.Total_Amount</span><label id="lblTotalAmount" class="edit-mode">@item.Total_Amount</label> </text>, style: "col1Width"),
+
+                grid.Column("Paid Amount", format: @<text><span class="display-mode"><label id="lblPaidAmount">@item.Paid_Amount</label> </span> <input type="number" id="PaidAmount" value="@item.Paid_Amount" class="edit-mode" /></text>, style: "col1Width")                                                                                                      
+             @*grid.Column("  Action", format: @<text>
+                    <button class="edit-user display-mode">Pay Amount</button>
+                    <button class="save-user edit-mode">Submit</button>
+                    <button class="cancel-user edit-mode">Cancel</button>
+            </text>, style: "col1Width", canSort: false)*@
+        ))
+
+       
+
+
+
+    </div>
+
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+</body>
+
+</html>

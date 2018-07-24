@@ -1,0 +1,237 @@
+﻿@{
+    ViewBag.Title = "Admin View Billing";
+    var grid = new WebGrid(Model);
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="karthik" content="">
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+
+    <script>
+        function editPatientDetails() {
+            var x = document.getElementById("editPatientDetails");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        $(function () {
+            $('.edit-mode').hide();
+
+
+        $('.edit-user,.cancel-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                tr.find('.edit-mode, .display-mode').toggle();
+            });
+
+
+            $('.save-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                var AccountID = tr.find("#lblAccountID").html();
+                var PatientID = tr.find("#lblPatientID").html();
+                var PaymentID = tr.find("#lblPaymentID").html();
+                var TotalAmount = tr.find("#TotalAmount").val();
+                var MedicinesAmount = tr.find("#lblMedicinesAmount").val();
+                var HospitalAmount = tr.find("#lblHospitalAmount").val(); 
+                var PaidAmount = tr.find("#PaidAmount").val();
+                var GeneratedDateTime = tr.find("#lblGeneratedDateTime").val();
+                
+
+                var NotificationModel =
+                    {
+                        "bill_ID": AccountID,
+                        "patient_ID": PatientID,
+                        "payment_ID": PaymentID,
+                        "total_Amount": TotalAmount,
+                        "paid_Amount": PaidAmount,
+                        "generatedDate_Time": GeneratedDateTime,
+                        "medicines_Fee": MedicinesAmount,
+                        "hospital_Fee": HospitalAmount
+                    };
+                $.ajax({
+                    url: '/Administrator/SaveAccountDetail',
+                    data: JSON.stringify(NotificationModel),
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function () {
+                        location.reload();
+                    }
+                });
+
+            });
+
+            $('.delete-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                var AccountID = tr.find("#lblAccountID").html();
+
+                var NotificationModel =
+                    {
+                        "bill_ID": AccountID
+                    };
+                $.ajax({
+                    url: '/Administrator/DeleteAccountDetail',
+                    data: JSON.stringify(NotificationModel),
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function () {
+                        location.reload();
+                    }
+                });
+
+            });
+
+            $('.edit-user').on('click', function () {
+
+            });
+        })
+
+        var $j = jQuery.noConflict();
+        $j(function () {
+            // This will make every element with the class "date-picker" into a DatePicker element
+            $j('.date-picker').datepicker();
+        });
+    </script>
+
+    <style type="text/css">
+        .edit-mode {
+            width: 100%;
+        }
+
+        .edit-user {
+            width: 100%;
+        }
+
+            .edit-user display-mode {
+                width: 100%;
+            }
+
+        .save-user edit-mode {
+            width: 100%;
+        }
+
+        .display-mode {
+            width: 100%;
+        }
+
+        .cancel-user {
+            width: 100%;
+        }
+
+        .webgrid-table {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            width: 110%;
+            display: table;
+            border-collapse: collapse;
+            border: solid px #C5C5C5;
+            background-color: white;
+        }
+
+            .webgrid-table td, th {
+                border: 1px solid #C5C5C5;
+                padding: 3px 7px 2px;
+                /*width: 100%;*/
+            }
+
+        .webgrid-header, .webgrid-header a {
+            background-color: #0094ff;
+            color: #ffffff;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .webgrid-footer {
+        }
+
+        .webgrid-row-style {
+            padding: 3px 7px 2px;
+        }
+
+        .webgrid-alternating-row {
+            background-color: azure;
+            padding: 3px 7px 2px;
+        }
+
+        .col1Width {
+            width: 55px;
+        }
+
+        .col2Width {
+            width: 220px;
+        }
+    </style>
+</head>
+
+<body>
+    @section ContentBreadCrumBar
+    {
+        <a class="glyphicon glyphicon-home"> Admin View Accounts</a>
+    }
+
+
+    @if (Model != null)
+    {
+        <div id="gridContent" style=" padding:20px; ">
+            @grid.GetHtml(
+        tableStyle: "webgrid-table",
+        headerStyle: "webgrid-header",
+        footerStyle: "webgrid-footer",
+        alternatingRowStyle: "webgrid-alternating-row",
+        selectedRowStyle: "webgrid-selected-row",
+        rowStyle: "webgrid-row-style",
+        mode: WebGridPagerModes.All,
+        columns:
+            grid.Columns(
+             grid.Column("Bill ID", format: @<text>  <span class="display-mode">@item.bill_ID </span><label id="lblAccountID" class="edit-mode">@item.bill_ID</label> </text>, style: "col1Width"),
+
+                grid.Column("Appointment ID", format: @<text>  <span class="display-mode">@item.appointment_ID </span><label id="lblAppID" class="edit-mode">@item.appointment_ID</label> </text>, style: "col1Width"),
+
+                                                                                     //grid.Column("Appointment Date", format: @<text>  <span class="display-mode">@item.appointmentDate </span><label id="lblAppID" class="edit-mode">@item.appointment_ID</label> </text>, style: "col1Width"),
+
+             grid.Column("Patient Name", format: @<text>  <span class="display-mode">@item.PatientFirstName </span><label id="lblPatientID" class="edit-mode">@item.PatientFirstName</label> </text>, style: "col1Width"),
+
+             grid.Column("Room ID", format: @<text>  <span class="display-mode">@item.room_ID </span><label id="lblAppointmentID" class="edit-mode">@item.room_ID</label> </text>, style: "col1Width"),
+
+             grid.Column("Medical Fee", format: @<text>  <span class="display-mode"><label id="lblMedicinesFee">@item.medicines_Fee</label></span><input type="number" id="lblMedicinesAmount" value="@item.medicines_Fee" class="edit-mode" /></text>, style: "col1Width"),
+
+             grid.Column("Hospital Fee", format: @<text>  <span class="display-mode"><label id="lblHospitalFee">@item.hospital_Fee</label></span></text>, style: "col1Width"),
+             
+             grid.Column("Room Fee", format: @<text>  <span class="display-mode"><label id="lblRoomFee">@item.room_Fee</label></span><input type="number" id="lblRoomAmount" value="@item.room_Fee" class="edit-mode" /></text>, style: "col1Width"),
+             
+             grid.Column("Total Amount", format: @<text>  <span class="display-mode"><label id="lblTotalAmount">@item.total_Amount</label></span><input type="number" id="TotalAmount" value="@item.total_Amount" class="edit-mode" /></text>, style: "col1Width"),
+
+             grid.Column("Paid Amount", format: @<text>  <span class="display-mode"><label id="lblPaidAmount">@item.paid_Amount</label></span><input type="number" id="PaidAmount" value="@item.paid_Amount" class="edit-mode"/></text>, style: "col1Width"),
+
+             grid.Column("Generated Date Time", format: @<text>  <span class="display-mode">@item.generatedDate_Time </span><label id="lblGeneratedDateTime" class="edit-mode">@item.generatedDate_Time</label> </text>, style: "col2Width"),
+
+             grid.Column("Action", format: @<text>
+                    <button class="edit-user display-mode">Edit</button>
+                    <button class="save-user edit-mode">Save</button>
+                    <button class="cancel-user edit-mode">Cancel</button>
+                    @*<button class="delete-user edit-mode">Delete</button>*@
+            </text>, style: "col2Width", canSort: false)
+        ))
+        </div>
+
+        <input type="button" class="submitBtn" style="display: flex; justify-content: center;" value="Generate New Bill" onclick="@("window.location.href='" + @Url.Action("ViewAddAccountDetail", "Administrator" ) +"'");" />
+
+    }
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+
+
+
+
+</body>
+</html>

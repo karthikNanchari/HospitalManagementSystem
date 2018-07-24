@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "DoctorFilterAppointments";
+}
+@model IEnumerable<Models.AppointmentModel>
+
+<!Doctype Html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+        var $j = jQuery.noConflict();
+        $j(function () {
+            // This will make every element with the class "date-picker" into a DatePicker element
+            $j('.date-picker').datepicker();
+        });
+
+
+        function filterAppointmets()
+        {
+            var selected = $("#filterDropdown option:selected").val();
+            console.log(selected);
+            if (selected != 0) {
+                $.ajax({
+                    url: '/Doctor/GetAppointmentsByFilter?id=' + selected,
+                    //data: JSON.stringify(selected),
+                    //data:{ "id" :selected},
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    //success: function () {
+                    //    location.reload();
+                    //}
+                });
+            }
+        }
+
+    </script>
+
+</head>
+<body>
+    @section ContentBreadCrumBar
+    {
+        <a class="glyphicon glyphicon-home"> Doctor manage Appointments</a>
+    }
+    <select onchange="filterAppointmets()" onclick="" id="filterDropdown">
+        <option value="0">-Select-</option>
+        <option value="1">Today</option>
+        <option value="2">Tomorrow</option>
+        <option value="3" selected>All</option>
+    </select>
+
+    <table border="1" id="detailsTable" style="width:100%">
+        <thead>
+            <tr>
+                <th>Appointment Number</th>
+                <th>Patient </th>
+                <th>Appointment Date</th>
+                <th>Appointment Time</th>
+                <th>Cancel</th>
+                <th>View Report</th>
+            </tr>
+        </thead>
+        @foreach (var apmnt in Model)
+        {
+            <tr style="text-align:center">
+                <td>
+                    @apmnt.appointment_ID
+                </td>
+                <td>
+                    @apmnt.patientName
+                </td>
+                <td>
+                    @((apmnt.appointment_Date).ToShortDateString())
+                </td>
+                <td>
+                    @apmnt.timings
+                </td>
+                <td>
+                    @if (apmnt.canCancel)
+                    {
+                        @Html.ActionLink("Cancel Appointment", "cancelAppointment", "Doctor", new { id = @apmnt.appointment_ID }, new { @Class = "btn btn-warning edit-mode" })
+                    }
+                </td>
+                @* <td>
+
+                        @if (!apmnt.requestedReport)
+                        {
+                            @Html.ActionLink("Req Report", "ReqReport", "Doctor", new { id = @apmnt.appointment_ID }, new { @Class = "btn btn-info edit-mode", data_toggle="modal", data_target= "#exampleModal" })
+                        }
+                    </td>*@
+                <td>
+                    @if (apmnt.reportAvailable)
+                    {
+                        @Html.ActionLink("View Report", "ViewReportsWithID", "Doctor", new { id = @apmnt.appointment_ID }, new { @Class = "btn btn-success edit-mode" })
+                    }
+                </td>
+            </tr>
+        }
+    </table>
+
+    <input type="button" value="Book Appointment" onclick="@("window.location.href='" + @Url.Action("BookNewAppointment", "Doctor" ) +"'");" />
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HospitalManagmentSystemClient", "HospitalManagmentSystemClient\HospitalManagmentSystemClient.csproj", "{220DAE3A-A384-4E35-8FED-1238058ECDCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client_Api", "Client_Api\Client_Api.csproj", "{1BBE5738-50A0-4AEC-998A-8DBDF15E0706}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{9B3DD3AA-A894-4302-BED4-C346BB6E3155}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{220DAE3A-A384-4E35-8FED-1238058ECDCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{220DAE3A-A384-4E35-8FED-1238058ECDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{220DAE3A-A384-4E35-8FED-1238058ECDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{220DAE3A-A384-4E35-8FED-1238058ECDCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BBE5738-50A0-4AEC-998A-8DBDF15E0706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BBE5738-50A0-4AEC-998A-8DBDF15E0706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BBE5738-50A0-4AEC-998A-8DBDF15E0706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BBE5738-50A0-4AEC-998A-8DBDF15E0706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B3DD3AA-A894-4302-BED4-C346BB6E3155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B3DD3AA-A894-4302-BED4-C346BB6E3155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B3DD3AA-A894-4302-BED4-C346BB6E3155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B3DD3AA-A894-4302-BED4-C346BB6E3155}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

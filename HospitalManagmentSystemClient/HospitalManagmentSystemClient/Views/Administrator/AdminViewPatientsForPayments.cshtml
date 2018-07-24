@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Admin View Patients";
+}
+@model Models.AccountModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="karthik" content="">
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+    <script>
+
+    </script>
+
+</head>
+<body>
+
+    @section ContentBreadCrumBar
+    {
+        <a class="glyphicon glyphicon-home"> Admin View Payments</a>
+    }
+    <table id="detailsTable">
+        <thead>
+            <tr>
+                <th>Select Patient</th>
+            </tr>
+        </thead>
+        <tr>
+            @using (Html.BeginForm("GetPayments", "Administrator", FormMethod.Post, new { enctype = "multipart/form" }))
+            {
+                <td>@Html.DropDownListFor(i => i.patient_ID, new SelectList(Model.patientdropDown, "Value", "Text"), "-Select-")</td>
+                    <td><input type="submit" value="View Payments" /></td>
+            }
+        </tr>
+    </table>
+
+
+</body>
+</html>
+

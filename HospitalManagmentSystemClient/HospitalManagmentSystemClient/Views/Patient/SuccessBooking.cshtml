@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "SuccessBooking";
+}
+
+<!Doctype Html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+</head>
+<body>
+    @if (Model != null)
+    {
+        <h3 style="text-align:center"> New Appointment Details </h3>
+        <table id="detailsTable">
+            <thead>
+                <tr>
+                    <th>Appointment ID</th>
+                    <th>Doctor ID</th>
+                    <th>Patient ID </th>
+                    <th>Appointment Date</th>
+                    <th>Appointment Time</th>
+                </tr>
+            </thead>
+            <tr style="text-align:center">
+                <td>
+                    @Model.appointment_ID
+                </td>
+                <td>
+                    @Model.doctorName
+                </td>
+                <td>
+                    @Model.patientName
+                </td>
+                <td>
+                    @((Model.appointment_Date).ToString("MM-dd-yyyy"))
+                </td>
+                <td>
+                    @Model.timings
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <h3 style="text-align:center"> Would you like to Email the Appointment </h3>
+        <input type="button" value="Send Email" class="btn btn-info btn-block submitBtn" onclick="@("window.location.href='"+ @Url.Action("SendAppointmentEmail", "Patient" , new { appID= Model.appointment_ID }) + "'");" />
+
+    }
+    else
+    {
+        <br />
+        <h3 style="text-align:center"> Appointment with same details already exits, check existing appointments or try booking with diffent inputs </h3>
+    }
+    </body>
+</html>

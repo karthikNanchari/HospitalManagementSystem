@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "NurseHome";
+}
+
+<h2>NurseHome</h2>
+
+
+@model IEnumerable<Models.NotificationsModel>
+
+@if (Model != null)
+{
+    <div>
+        @Html.Partial("_NotificationHome", Model)
+    </div>
+}

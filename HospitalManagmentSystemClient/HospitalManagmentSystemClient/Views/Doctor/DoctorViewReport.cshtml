@@ -1,0 +1,225 @@
+﻿@{
+    ViewBag.Title = "Doctor View Reports";
+    var grid = new WebGrid(Model);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="karthik" content="">
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+
+    <script>
+
+        function editPatientDetails() {
+            var x = document.getElementById("editPatientDetails");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        $(function () {
+            $('.edit-mode').hide();
+
+
+            $('.edit-user, .cancel-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                tr.find('.edit-mode, .display-mode').toggle();
+            });
+
+
+            $('.save-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                var PatPatientID = tr.find("#lblPatientID").html();
+                var PatreportNo = tr.find("#lblReportNo").html();
+                var PatLabInchargeID = tr.find("#lblLabInchargeID").html();
+                var PatLabInc = tr.find("#lblLabInchargeID").val();
+                var PatLabResult = tr.find("#LabResult").val();
+                var PatReportTime = tr.find("#ReportTime").val();
+
+
+
+                var ReportModel =
+                    {
+                        "report_ID": PatreportNo,
+                        "labResult": PatLabResult,
+                        "reportTime": PatReportTime,
+                        "patient_ID": PatPatientID,
+                        "labIncharge_ID": PatLabInchargeID
+                    };
+                $.ajax({
+                    url: '/LabIncharge/EditPatientReports',
+                    data: JSON.stringify(ReportModel),
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function () {
+                        location.reload();
+                    }
+                });
+
+            });
+
+            $('.edit-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+
+            });
+
+            $('.delete-user').on('click', function () {
+
+                var tr = $(this).parents('tr:first');
+                var ReportID = tr.find("#lblReportNo").html();
+
+                var ReportModel = {
+                    "report_ID": ReportID
+                }
+                $.ajax({
+                    url: '/LabIncharge/DeletePatientReport',
+                    data: JSON.stringify(ReportModel),
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function () {
+                        location.reload();
+                    }
+                });
+
+            });
+
+
+
+
+            var $j = jQuery.noConflict();
+            $j(function () {
+                // This will make every element with the class "date-picker" into a DatePicker element
+                $j('.date-picker').datepicker();
+            });
+        })
+    </script>
+    <style type="text/css">
+        .edit-mode {
+            /*width: 100%;*/
+        }
+
+        .edit-user {
+            /*width: 100%;*/
+        }
+
+            .edit-user display-mode {
+                /*width: 100%;*/
+            }
+
+        .save-user edit-mode {
+            /*width: 100%;*/
+        }
+
+        .display-mode {
+            /*width: 100%;*/
+        }
+
+        .cancel-user {
+            /*width: 100%;*/
+        }
+
+        .webgrid-table {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            width: 110%;
+            display: table;
+            border-collapse: collapse;
+            border: solid px #C5C5C5;
+            background-color: white;
+        }
+
+            .webgrid-table td, th {
+                border: 1px solid #C5C5C5;
+                padding: 3px 7px 2px;
+                /*width: 100%;*/
+            }
+
+        .webgrid-header, .webgrid-header a {
+            background-color: #0094ff;
+            color: #ffffff;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .webgrid-footer {
+        }
+
+        .webgrid-row-style {
+            padding: 3px 7px 2px;
+        }
+
+        .webgrid-alternating-row {
+            background-color: azure;
+            padding: 3px 7px 2px;
+        }
+
+        .col1Width {
+            /*width: 55px;*/
+        }
+
+        .col2Width {
+            /*width: 220px;*/
+        }
+    </style>
+</head>
+
+<body>
+
+    @section ContentBreadCrumBar
+    {
+        <a class="glyphicon glyphicon-home"> Doctor View Reports</a>
+    }
+    <div id="gridContent" style=" padding:20px; ">
+        @grid.GetHtml(
+        tableStyle: "webgrid-table",
+        headerStyle: "webgrid-header",
+        footerStyle: "webgrid-footer",
+        alternatingRowStyle: "webgrid-alternating-row",
+        selectedRowStyle: "webgrid-selected-row",
+        rowStyle: "webgrid-row-style",
+        mode: WebGridPagerModes.All,
+        columns:
+            grid.Columns(
+             grid.Column("PatientID", format: @<text>  <span class="display-mode">@item.patient_ID </span><label id="lblPatientID" class="edit-mode">@item.patient_ID</label> </text>, style: "col1Width"),
+
+
+             grid.Column("Patient Name", format: @<text>  <span class="display-mode">@item.patientFirstName </span><label id="lblpatientFirstName" class="edit-mode">@item.patientFirstName</label> </text>, style: "col1Width"),
+
+
+             grid.Column("Report No.", format:@<text>  <span class="display-mode">@item.report_ID</span> <label id="lblReportNo" class="edit-mode">@item.report_ID</label> </text>, style: "col2Width"),
+
+             grid.Column("Lab Result", format: @<text>  <span class="display-mode"><label id="lblLabResult">@item.labResult</label></span><input type="text" id="LabResult" value="@item.labResult" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("Report Time", format: @<text>  <span class="display-mode"><label id="lblReportTime">@((Convert.ToDateTime(item.reportTime)).ToString("t"))</label></span> <select id="ReportTime" class="edit-mode" value="@item.reportTime">
+                <option value="09:00">09:00</option>
+                <option value="09:30">09:30</option>
+                <option value="10:00">10:00</option>
+                <option value="10:30">10:30</option>
+            </select>       </text>, style: "col1Width"),
+
+             grid.Column("Report Date", format: @<text>  <span class="display-mode"> <label id="lblReportDate">@((item.date).ToString("MM-dd-yyyy"))</label></span> <input type="date" id="ReportDate" value="@((item.date).ToString("MM-dd-yyyy"))" class="edit-mode date-picker" />  </text>, style: "col1Width")
+
+             @*grid.Column("Action", format: @<text>
+                    <button class="edit-user display-mode">Edit</button>
+                    <button class="save-user edit-mode">Save</button>
+                    <button class="delete-user edit-mode">Delete</button>
+                    <button class="cancel-user edit-mode">Cancel</button>
+            </text>, style: "col3Width", canSort: false)*@
+        ))
+    </div>
+
+</body>
+
+</html>
+
+

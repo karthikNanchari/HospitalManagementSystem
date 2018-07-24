@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Select BillID";
+}
+
+<h4>Select Bill ID</h4>
+
+@model Models.PaymentModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="karthik" content="">
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+
+
+
+    <script>
+
+        function billID() {
+            var patientID = $("#patient_ID").val();
+
+            $.ajax({
+                type: "POST",
+                url: "GetAppointmentsWithNoBilling",
+                data: "{ 'patientID':'" + patientID + "'}",
+                contentType: "application/json; charset=utf-8",
+                 dataType: "json",
+                success: function (data) {
+                    $("#Appointment_ID").empty();
+
+                    $.each(data, function (i, obj) {
+
+                        var p = new Option(obj.Text, obj.Value);
+                        $("#Appointment_ID").append(p);
+                    });
+                }
+            });
+
+
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+    @section ContentBreadCrumBar
+    {
+        <a class="glyphicon glyphicon-home"> Patient View Payments</a>
+    }
+    <table id="detailsTable">
+        <thead>
+            <tr>
+                <th>BillID</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tr>
+            @using (Html.BeginForm("GetPaymentsWithBillID", "Administrator", FormMethod.Post, new { enctype = "multipart/form" }))
+            {
+                <td style="text-align: center">@Html.DropDownListFor(i => i.bill_ID, new SelectList(Model.billList, "Value", "Text"), "-Select-")</td>
+                <td style="text-align: center"><input type="submit" value="Select Billing" /></td>
+            }
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,86 @@
+﻿@model Models.NotificationsModel
+@{
+    ViewBag.Title = "AdminAddNotifications";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="karthik" content="">
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+    <script>
+
+     $(".date-pick").datepicker('setDate', new Date());
+    var $j = jQuery.noConflict();
+    $j(function () {
+        // This will make every element with the class "date-picker" into a DatePicker element
+        $j('.date-picker').datepicker({
+            defaultDate: "+1w",
+            changeMonth: true,
+            numberOfMonths: 1,
+            minDate: 1,
+            maxDate: "+3Y"
+        });
+    });
+   
+        //
+    </script>
+
+</head>
+<body>
+
+    @section ContentBreadCrumBar
+    {
+        <a class="glyphicon glyphicon-home"> Admin Add Notification</a>
+    }
+
+    @using (Html.BeginForm("GetRoleDetails", "Administrator", FormMethod.Post, new { enctype = "multipart/form" }))
+    {
+        <table>
+            <tr>
+                <td>
+                    @Html.DropDownListFor(i => i.Notifications, new List<SelectListItem> {
+               new SelectListItem{ Value="-Select", Text="-Select-"},
+               new SelectListItem{ Value="Doctors", Text="Doctors"},
+               new SelectListItem{ Value="Patients", Text="Patients"},
+               new SelectListItem{ Value="Nurses", Text="Nurses"},
+               new SelectListItem{ Value="LabIncharges", Text="LabIncharges"} })
+                </td>
+                <td><input type="submit" value="Select Role" /></td>
+            </tr>
+        </table>
+    }
+
+    @if (ViewBag.dropdownModel != null)
+    {
+        <table id="detailsTable">
+            <thead>
+                <tr>
+                    <th>User Name</th>
+                    <th>Notification</th>
+                    <th>Expiry Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tr>
+                @using (Html.BeginForm("SaveNotification", "Administrator", FormMethod.Post, new { enctype = "multipart/form" }))
+                {
+                    <td style="text-align: center;">@Html.DropDownListFor(i => i.UserRoleID, new SelectList(Model.personDetails,"Value","Text"))</td>
+                    <td style="text-align: center;">@Html.TextAreaFor(i => i.Notifications)</td>
+                    <td style="text-align: center;">&nbsp;&nbsp; @Html.TextBoxFor(i => i.Expiry,"", new { @class = "date-picker", @placeholder = "-Select Expiry Date-" })</td>
+                    <td style="text-align: center;"><input type="submit" value="Save Notification"/></td>
+                }
+            </tr>
+        </table>
+    }
+
+
+</body>
+</html>

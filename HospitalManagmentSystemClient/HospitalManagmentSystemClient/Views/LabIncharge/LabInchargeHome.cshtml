@@ -1,0 +1,170 @@
+﻿
+@{
+    ViewBag.Title = "LabIncharge Home";
+}
+
+@{
+    var grid = new WebGrid(Model);
+}
+@section ContentBreadCrumBar
+    {
+    <a class="glyphicon "> Lab Incharge Home</a>
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="karthik" content="">
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+
+    <script>
+
+        function viewRecordDetails() {
+            var x = document.getElementById("viewRecordDetails");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        $(function () {
+            $('.edit-mode').hide();
+
+
+     
+
+            $('.view-user').on('click', function () {
+                //debugger;
+                var tr = $(this).parents('tr:first');
+                var paientID = tr.find("#patientID").html();
+                //var PatReportID = tr.find("reportID").val();
+                //var PatLabResult = tr.find("LabResult").val();
+
+                @*//@using (Html.BeginForm("GetPatientReports","LabIncharge",FormMethod.Post)) { <input type="Submit" value=PatPatientID />  }*@
+
+
+                var PatientModel =
+                    {
+                        "pid":7002
+                    };
+                $.ajax({
+                    //url: 'LabIncharge/GetPatientReports?paientID=' + 7002,
+                    url: 'LabIncharge/GetPatientReports',
+                    data: JSON.stringify(PatientModel),
+                    //data:paientID,
+                    //type: 'Get',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function () {
+                        window.location.href='LabIncharge/LabInchargeViewReports.cshtml'
+                    }
+                });
+
+            });
+
+         
+        })
+    </script>
+    <style type="text/css">
+        .view-mode {
+            /*width: 100%;*/
+        }
+
+        .view-user {
+            /*width: 100%;*/
+        }
+
+            .view-user display-mode {
+                /*width: 100%;*/
+            }
+
+        .save-user edit-mode {
+            /*width: 100%;*/
+        }
+
+        .display-mode {
+            width: 100%;
+        }
+
+        .cancel-user {
+            /*width: 100%;*/
+        }
+
+        .webgrid-table {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            /*width: 110%;*/
+            display: table;
+            border-collapse: collapse;
+            border: solid #C5C5C5;
+            background-color: white;
+        }
+
+            .webgrid-table td, th {
+                border: 1px solid #C5C5C5;
+                padding: 3px 7px 2px;
+                /*width: 100%;*/
+            }
+
+        .webgrid-header, .webgrid-header a {
+            background-color: #0094ff;
+            color: #ffffff;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .webgrid-footer {
+        }
+
+        .webgrid-row-style {
+            padding: 3px 7px 2px;
+        }
+
+        .webgrid-alternating-row {
+            background-color: azure;
+            padding: 3px 7px 2px;
+        }
+
+        .col1Width {
+            /*width: 55px;*/
+        }
+
+        .col2Width {
+            /*width: 220px;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gridContent" style=" padding:20px; ">
+        @grid.GetHtml(
+     tableStyle: "webgrid-table",
+     headerStyle: "webgrid-header",
+     footerStyle: "webgrid-footer",
+     alternatingRowStyle: "webgrid-alternating-row",
+     selectedRowStyle: "webgrid-selected-row",
+     rowStyle: "webgrid-row-style",
+     mode: WebGridPagerModes.All,
+     columns:
+         grid.Columns(
+         grid.Column("PatientID", format: @<text>  <span class="display-mode"> <label id="patientID" value="@item.patient_ID">  @item.patient_ID   </label></span> </text>, style: "col1Width"),
+          grid.Column("ReportID", format: @<text><span class="display-mode"> <label id="lblreportID">  @item.report_ID   </label>  </span>  </text>, style: "col1Width"),
+          grid.Column("LabResult", format: @<text><span class="display-mode"> <label id="lblLabResult"> @item.labResult  </label></span> </text>, style: "col1Width"),
+          grid.Column("Report Time", format: @<text><span class="display-mode">@((Convert.ToDateTime(item.reportTime)).ToString("t"))</span> </text>, style: "col1Width"),
+          grid.Column(header:"View Patient", format:@<text>  @Html.ActionLink("Details", "GetPatientReports",new { id=@item.patient_ID} ) </text>)
+     ))
+    </div>
+
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,264 @@
+﻿@{ 
+    var userRole = Models.LoginModel.UserRole ;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title  HMS</title>
+    <link href="~/Scripts/sideNavBar.css" rel="stylesheet" />
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script type="text/javascript">
+
+    history.pushState(null, null, location.href);
+    window.onpopstate = function () {
+        history.go(1);
+    };
+
+
+        window.onload = function () {
+            debugger;
+            display_ct();
+        }
+
+        function display_c() {
+            var refresh = 1000; // Refresh rate in milli seconds
+            mytime = setTimeout('display_ct()', refresh)
+        }
+        function display_ct() {
+            var x = new Date()
+            var x1 = x.getMonth() + "/" + x.getDate() + "/" + x.getYear();
+            x1 = x1 + " - " + x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds();
+            document.getElementById('time').innerHTML = x1;
+        }
+
+     
+
+
+    </script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="row" style="color:white">
+            <div class="col-md-8"><h4 class="col-sm">Hospital Management System</h4></div>
+            <div class="col-md-4"><h4 class="col-sm">Logged in UserID: @(((Session["UserId"]).ToString() != null ? (Session["UserId"]) : 0)) / &nbsp; UserName: &nbsp;@(Session["UserName"]) </h4></div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+
+        <nav id="sidebar">
+            <!-- Sidebar Links -->
+            @{
+                if ((Session["key"]).ToString() == "login")
+                {
+
+                    Response.Redirect(Url.Action("Login", "Home"));
+                }
+                else if((Session["key"]).ToString() == "doctor")
+                {
+                <ul class="list-unstyled components">
+                    <li>
+                            @Html.ActionLink("Home", "Index", "Doctor",new { }, new { @class= "glyphicon glyphicon-briefcase" })
+                    </li>
+                    <li>
+                            @Html.ActionLink("Manage Appointments", "GetAppointments", "Doctor", new { }, htmlAttributes: new { @class = "glyphicon glyphicon-briefcase" })
+                    </li>
+                    <li>
+                            @Html.ActionLink(" Manage Reports", "ViewPatients", "Doctor", new { }, htmlAttributes: new { @class = "glyphicon glyphicon-briefcase" })
+                    </li>
+                    <li>
+                           @Html.ActionLink(" Manage Account", "ViewAccountDetails", "Doctor", new { }, htmlAttributes: new { @class = "glyphicon glyphicon-briefcase" })
+                    </li>
+                    <li>
+                          @Html.ActionLink("Book Appointment", "BookNewAppointment", "Doctor")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Request Report", "NewReport", "Doctor")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Cancel Appointments", "ViewAppointmentsToCancel", "Doctor")
+                    </li>
+                    <li>
+                            @Html.ActionLink("Send Email","SendEmail","Emails")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Logout", "SignOutUser", "Home")
+                    </li>
+                </ul>
+            }
+          else  if ((Session["key"]).ToString() == "admin")
+            {
+                <ul class="list-unstyled components">
+                    @*<li>
+                        @Html.ActionLink(" Home", "Index", "Administrator")
+                    </li>*@
+                    <li>
+                        @Html.ActionLink("Manage Billing", "ViewBilling", "Administrator")
+                    </li>
+                    <li>
+                        @Html.ActionLink("View Payments", "ViewPatientsForPayments", "Administrator")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Pay Payments", "ViewForPayments", "Administrator")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Manage Notifications", "GetAllNotifications", "Administrator")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Manage Rooms", "ViewRooms", "Administrator")
+                    </li>
+                    <li>
+                        @Html.ActionLink("View Rooms", "ViewPatRoomBooking", "Administrator")
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Manage User
+                        <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" style="background-color:darkslategray;color:floralwhite">
+                            <li>@Html.ActionLink("Manage Doctors", "ViewDoctors", "Administrator", new { } ,new { @style = "color:azure" })</li>
+                            <li>@Html.ActionLink("Manage Patients", "ViewPatients", "Administrator", new { @style = "color:azure" })</li>
+                            <li>@Html.ActionLink("Manage Nurse", "ViewNurses", "Administrator", new { @style = "color:azure" })</li>
+                            <li>@Html.ActionLink("Manage Incharge", "ViewLabIncharges", "Administrator", new { @style = "color:azure" })</li>
+                        </ul>
+                    </li>
+                    <li>
+                        @Html.ActionLink("Send Email", "SendEmail", "Emails")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Logout", "SignOutUser", "Home")
+                    </li>
+                </ul>
+            }
+            else if ((Session["key"]).ToString() == "patient")
+            {
+                <ul class="list-unstyled components">
+                    <li>
+                        @Html.ActionLink(" Home", "Index", "Patient",new { }, new { @class = "glyphicon glyphicon-home" })
+                    </li>
+                    <li>
+                        @Html.ActionLink(" View/Edit Appointments", "GetAppointments", "Patient", new { }, new { @class = "glyphicon glyphicon-edit" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Book Appointment", "PatientAppointment", "Patient", new { }, new { @class = "glyphicon glyphicon-th-large" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("View Billing", "ViewBills", "Patient", new { }, new { @class = "glyphicon glyphicon-th-large" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Pay Payments", "GetPayments", "Patient", new { }, new { @class = "glyphicon glyphicon-envelope" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("View Payments", "PayPayments", "Patient", new { }, new { @class = "glyphicon glyphicon-envelope" })
+                    </li>
+                    
+                    <li>
+                        @Html.ActionLink("View Reports", "ViewReports", "Patient", new { }, new { @class = "glyphicon glyphicon-envelope" })
+                    </li>
+                    <li>
+                        @Html.ActionLink(" Manage Account", "ViewManageAccount", "Patient", new { }, htmlAttributes: new { @class = "glyphicon glyphicon-briefcase" })
+                    </li>
+                    <li >
+                       @Html.ActionLink(" Send Email", "SendEmail", "Emails", new { }, new { @class = "glyphicon glyphicon-envelope" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Logout", "SignOutUser", "Home")
+                    </li>
+                </ul>
+            }
+           else if ((Session["key"]).ToString() == "nurse")
+            {
+                <ul class="list-unstyled components">
+                    <li>
+                        @Html.ActionLink(" Home", "Index", "Nurse")
+                    </li>
+                    <li>
+                        @Html.ActionLink(" View Doctor Appointments", "SelectDoctors", "Nurse")
+                    </li>
+                    <li>
+                        @Html.ActionLink(" View Patient Appointments", "SelectPatients", "Nurse")
+                    </li>
+                    <li>
+                        @Html.ActionLink(" Check rooms", "ViewRooms", "Nurse")
+                    </li>
+                    <li>
+                        @Html.ActionLink(" Send Email", "SendEmail", "Emails")
+                    </li>
+                    @*<li>
+                        @Html.ActionLink(" Manage Account", "", "", new { }, htmlAttributes: new { @class = "glyphicon glyphicon-briefcase" })
+                    </li>*@
+                    <li>
+                        @Html.ActionLink("Logout", "SignOutUser", "Home")
+                    </li>
+                </ul>
+            }
+           else if ((Session["key"]).ToString() == "labIncharge")
+            {
+                <ul class="list-unstyled components">
+                    <li>
+                        @Html.ActionLink(" Home", "Index", "LabIncharge")
+                    </li>
+                    <li>
+                        @Html.ActionLink(" View Reports", "ViewPatientReports", "LabIncharge")
+                    </li>
+                    <li>
+                        @Html.ActionLink(" Create Reports", "ViewCreateNewReport", "LabIncharge")
+                    </li>
+                    <li>
+                        @Html.ActionLink(" Send Email", "SendEmail", "Emails")
+                    </li>
+                    @*<li>
+                        @Html.ActionLink(" Manage Account", "", "", new { }, htmlAttributes: new { @class = "glyphicon glyphicon-briefcase" })
+                    </li>*@
+                    <li>
+                        @Html.ActionLink("Logout", "SignOutUser", "Home")
+                    </li>
+                </ul>
+            }
+            }
+        </nav>
+
+        <div style="width:100%;">
+            <div class="pull-right">
+                <div class="breadcrumb" > @RenderSection("ContentBreadCrumBar", false) </div>
+            </div>
+           
+            
+            <button type="button" id="sidebarCollapse" class="btn btn-outline-primary">
+                <i class="glyphicon glyphicon-align-left"></i>
+                Toggle 
+            </button>
+                @RenderBody()
+        </div>
+        
+    </div>
+
+    
+    <div class="footer text-center navbar-fixed-bottom" style="height:7%">
+
+        Copyright: <a href="http://karthiknanchari.com/"> &copy; Karthik Nanchari  @DateTime.Now.Year </a>
+
+    </div>
+
+    <script >
+        window.onload = function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        }
+    </script>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+
+

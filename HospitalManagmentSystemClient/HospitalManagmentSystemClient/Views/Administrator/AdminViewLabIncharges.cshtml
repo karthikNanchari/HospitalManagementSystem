@@ -1,0 +1,239 @@
+﻿@{
+    ViewBag.Title = "AdminViewIncharge";
+    var grid = new WebGrid(Model);
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="karthik" content="">
+    @* <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">*@
+    @*<link href="css/simple-sidebar.css" rel="stylesheet">*@
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+
+    <script>
+
+
+        function editDoctorDetails() {
+            var x = document.getElementById("editDoctorDetails");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        $(function () {
+            $('.edit-mode').hide();
+
+            $('.edit-user, .cancel-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                tr.find('.edit-mode, .display-mode').toggle();
+            });
+
+
+            $('.save-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                var DocDoctorID = tr.find("#lblInchargeID").html();
+                var DocFirstName = tr.find("#FirstName").val();
+                var DocLastName = tr.find("#LastName").val();
+                var DocEmailID = tr.find("#EmailID").val();
+                var DocPhone = tr.find("#Phone").val();
+                var DocDateOfBirth = tr.find("#DateOfBirth").val();
+                var DocGender = tr.find("#Gender").find(":selected").text();
+                var DocAddress = tr.find("#Address").val();
+                var DocIsActive = tr.find("#lblIsActive").find(":selected").text();
+
+
+                var DoctorModel =
+                    {
+                        "pid": DocDoctorID,
+                        "firstName": DocFirstName,
+                        "lastName": DocLastName,
+                        "emailID": DocEmailID,
+                        "phone": DocPhone,
+                        "dateOfBirth": DocDateOfBirth,
+                        "gender": DocGender,
+                        "address": DocAddress,
+                        "isActive": DocIsActive,
+                    };
+                $.ajax({
+                    url: '/Administrator/ManageLabIncharges',
+                    data: JSON.stringify(DoctorModel),
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function () {
+                        location.reload();
+                    }
+                });
+
+            });
+
+            $('.edit-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                var DocDoctorID = tr.find("#lblInchargeID").html();
+                var DocFirstName = tr.find("#FirstName").val();
+                var DocLastName = tr.find("#LastName").val();
+                var DocEmailID = tr.find("#EmailID").val();
+                var DocPhone = tr.find("#Phone").val();
+                var DocDateOfBirth = tr.find("#DateOfBirth").val();
+                var DocGender = tr.find("#Gender").text();
+                var DocAddress = tr.find("#Address").val();
+                var DocIsActive = tr.find("#lblIsActive").text();
+
+                tr.find("#lblInchargeID").text(DocDoctorID);
+                tr.find("#FirstName").text(DocFirstName);
+                tr.find("#LastName").text(DocLastName);
+                tr.find("#EmailID").text(DocEmailID);
+                tr.find("#Phone").text(DocPhone);
+                tr.find("#DateOfBirth").text(DocDateOfBirth);
+                tr.find("#Gender").text(DocGender);
+                tr.find("#Address").text(DocAddress);
+                tr.find("#IsActive").text(DocIsActive);
+               // tr.find('.edit-mode, .display-mode').toggle();
+
+            });
+
+        })
+
+        var $j = jQuery.noConflict();
+        $j(function () {
+            // This will make every element with the class "date-picker" into a DatePicker element
+            $j('.date-picker').datepicker();
+        });
+    </script>
+    <style type="text/css">
+        .edit-mode {
+            width: 100%;
+        }
+
+        .edit-user {
+            width: 100%;
+        }
+
+            .edit-user display-mode {
+                width: 100%;
+            }
+
+        .save-user edit-mode {
+            width: 100%;
+        }
+
+        .display-mode {
+            width: 100%;
+        }
+
+        .cancel-user {
+            width: 100%;
+        }
+
+        .webgrid-table {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            width: 110%;
+            display: table;
+            border-collapse: collapse;
+            border: solid #C5C5C5;
+            background-color: white;
+        }
+
+            .webgrid-table td, th {
+                border: 1px solid #C5C5C5;
+                padding: 3px 7px 2px;
+                /*width: 100%;*/
+            }
+
+        .webgrid-header, .webgrid-header a {
+            background-color: #0094ff;
+            color: #ffffff;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .webgrid-footer {
+        }
+
+        .webgrid-row-style {
+            padding: 3px 7px 2px;
+        }
+
+        .webgrid-alternating-row {
+            background-color: azure;
+            padding: 3px 7px 2px;
+        }
+
+        .col1Width {
+            width: 55px;
+        }
+
+        .col2Width {
+            width: 220px;
+        }
+    </style>
+</head>
+
+<body>
+
+    @section ContentBreadCrumBar
+    {
+        <a class="glyphicon glyphicon-home"> Admin View LabIncharges</a>
+    }
+
+
+    <div id="gridContent" style=" padding:20px; ">
+        @grid.GetHtml(
+        tableStyle: "webgrid-table",
+        headerStyle: "webgrid-header",
+        footerStyle: "webgrid-footer",
+        alternatingRowStyle: "webgrid-alternating-row",
+        selectedRowStyle: "webgrid-selected-row",
+        rowStyle: "webgrid-row-style",
+        mode: WebGridPagerModes.All,
+        columns:
+            grid.Columns(
+             grid.Column("Incharge ID", format: @<text>  <span class="display-mode">@item.pid </span><label id="lblInchargeID" class="edit-mode">@item.pid</label> </text>, style: "col1Width"),
+
+             grid.Column("FirstName", format:@<text>  <span class="display-mode"> <label id="lblFirstName">@item.firstName</label> </span> <input type="text" id="FirstName" value="@item.firstName" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("LastName", format: @<text>  <span class="display-mode"><label id="lblLastName">@item.lastName</label></span><input type="text" id="LastName" value="@item.lastName" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("EmailID", format: @<text>  <span class="display-mode"><label id="lblEmailID">@item.emailID</label> </span> <input type="email" id="EmailID" value="@item.emailID" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("Phone", format:@<text>  <span class="display-mode"><label id="lblPhone">@item.phone</label></span> <input type="number" maxlength=10 id="Phone" value="@item.phone" placeholder="1324567890" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("DateOfBirth", format:@<text>  <span class="display-mode"><label id="lblDateOfBirth">@((item.dateOfBirth).ToString("MM-dd-yyyy"))</label></span> <input type="date" id="DateOfBirth" value="@item.dateOfBirth" class="edit-mode"/></text>, style: "col2Width"),
+
+             grid.Column("Gender", format: @<text>  <span class="display-mode"><label id="Gender">@item.gender</label></span> <select id="gender" class="edit-mode" value="@item.gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>       </text>, style: "col1Width"),
+
+             grid.Column("Address", format: @<text>  <span class="display-mode"><label id="lblAddress">@item.address</label></span> <input type="text" id="Address" value="@item.address" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("IsActive", format: @<text>  <span class="display-mode"><label id="lblIsActive">@item.isActive</label></span> <select id="lblIsActive" class="edit-mode" value="@item.isActive">
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>       </text>, style: "col1Width"),
+
+
+             grid.Column("Action", format: @<text>
+                    <button class="edit-user display-mode">Edit</button>
+                    <button class="save-user edit-mode">Save</button>
+                    <button class="cancel-user edit-mode">Cancel</button>
+            </text>, style: "col3Width", canSort: false)
+        ))
+    </div>
+
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+</body>
+
+</html>
+

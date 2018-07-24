@@ -1,0 +1,277 @@
+﻿
+@{
+    ViewBag.Title = "Admin Manage Notifications";
+}
+@{
+    var grid = new WebGrid(Model);
+}
+@*@model Models.NotificationsModel*@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="karthik" content="">
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+
+    <script>
+        function editPatientDetails() {
+            var x = document.getElementById("editPatientDetails");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        $(function () {
+            $('.edit-mode').hide();
+     
+
+        $('.edit-user,.cancel-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                tr.find('.edit-mode, .display-mode').toggle();
+            });
+
+
+            $('.save-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                var ID = tr.find("#lblNotificationID").html();
+                var AdminID = tr.find("#lblAdminID").html();
+                var UserRoleID = tr.find("#UserRoleID").val();
+                var Notifications = tr.find("#Notifications").val();
+                var Created_DateTime = tr.find("#lblCreatedDate").html();
+                var Expiry = tr.find("#Expiry").val();
+
+
+                var NotificationModel =
+                    {
+                        "ID": ID,
+                        "AdminID": AdminID,
+                        "UserRoleID": UserRoleID,
+                        "Notifications": Notifications,
+                        "Expiry": Expiry,
+                        "Created_DateTime": Created_DateTime,
+                    };
+                $.ajax({
+                    url: '/Administrator/ManageNotification',
+                    data: JSON.stringify(NotificationModel),
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function () {
+                        location.reload();
+                    }
+                });
+
+            });
+
+            $('.delete-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                var ID = tr.find("#lblNotificationID").html();
+                var AdminID = tr.find("#lblAdminID").val();
+
+                var NotificationModel =
+                    {
+                        "ID": ID,
+                        "AdminID" : AdminID
+                    };
+                $.ajax({
+                    url: '/Administrator/DeleteNotifications',
+                    data: JSON.stringify(NotificationModel),
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function () {
+                        location.reload();
+                    }
+                });
+
+            });
+
+            $('.edit-user').on('click', function () {
+                //debugger;
+                //var tr = $(this).parents('tr:first');
+                //var PatPatientID = tr.find("#PatientID").html();
+                //var PatFirstName = tr.find("#FirstName").val();
+                //var PatLastName = tr.find("#LastName").val();
+                //var PatEmailID = tr.find("#EmailID").val();
+                //var PatPhone = tr.find("#Phone").val();
+                //var PatDateOfBirth = tr.find("#DateOfBirth").val();
+                //var PatGender = tr.find("#Gender").text();
+                //var PatAddress = tr.find("#Address").val();
+                //var PatIsActive = tr.find("#IsActive").val();
+                //var PatPatientType = tr.find("#PatientType").text();
+
+                //tr.find("#PatientID").text(PatPatientID);
+                //tr.find("#FirstName").text(PatFirstName);
+                //tr.find("#LastName").text(PatLastName);
+                //tr.find("#EmailID").text(PatEmailID);
+                //tr.find("#Phone").text(PatPhone);
+                //tr.find("#DateOfBirth").text(PatDateOfBirth);
+                //tr.find("#Gender").text(PatGender);
+                //tr.find("#Address").text(PatAddress);
+                //tr.find("#IsActive").text(PatIsActive);
+                //tr.find("#PatientType").text(PatPatientType);
+               // tr.find('.edit-mode, .display-mode').toggle();
+
+            });
+        })
+
+        var $j = jQuery.noConflict();
+        $j(function () {
+            // This will make every element with the class "date-picker" into a DatePicker element
+            $j('.date-picker').datepicker();
+        });
+
+        //$('#role').on('change', function() {
+        //    $('#roleSubmit' + $(this).val()).prop('disabled', false)
+        //        .siblings().prop('disabled', true);
+        //});​
+   </script>
+
+    <style type="text/css">
+        .submitBtn {
+            margin: auto !important;
+        }
+        .edit-mode {
+            width: 100%;
+        }
+
+        .edit-user {
+            width: 100%;
+        }
+
+            .edit-user display-mode {
+                width: 100%;
+            }
+
+        .save-user edit-mode {
+            width: 100%;
+        }
+
+        .display-mode {
+            width: 100%;
+        }
+
+        .cancel-user {
+            width: 100%;
+        }
+
+        .webgrid-table {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            width: 110%;
+            display: table;
+            border-collapse: collapse;
+            border: solid px #C5C5C5;
+            background-color: white;
+        }
+
+            .webgrid-table td, th {
+                border: 1px solid #C5C5C5;
+                padding: 3px 7px 2px;
+                /*width: 100%;*/
+            }
+
+        .webgrid-header, .webgrid-header a {
+            background-color: #0094ff;
+            color: #ffffff;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .webgrid-footer {
+        }
+
+        .webgrid-row-style {
+            padding: 3px 7px 2px;
+        }
+
+        .webgrid-alternating-row {
+            background-color: azure;
+            padding: 3px 7px 2px;
+        }
+
+        .col1Width {
+            /*width: 55px;*/
+        }
+
+        .col2Width {
+            /*width: 220px;*/
+        }
+
+      
+    </style>
+</head>
+
+<body>
+  
+    @section ContentBreadCrumBar
+    {
+        <a class="glyphicon "> Admin Manage Notification</a>
+    }
+@if(ViewBag.dropDownModel == null){
+        using (Html.BeginForm("ViewRoleNoti", "Administrator", FormMethod.Post, new { enctype = "multipart/form" }))
+        {
+            <table >
+                <tr >
+                    <td >
+                        @Html.DropDownList("role", new List<SelectListItem> {
+                       new SelectListItem{ Value="-Select", Text="-Select-"},
+                       new SelectListItem{ Value="5000", Text="Doctors"},
+                       new SelectListItem{ Value="7000", Text="Patients"},
+                       new SelectListItem{ Value="3000", Text="Nurses"},
+                       new SelectListItem{ Value="4000", Text="LabIncharges"} })
+                    </td>
+                    <td ><input type="submit" value="Select Role" id="roleSubmit" /></td>
+                </tr>
+            </table>
+        }
+  }
+@if (ViewBag.dropdownModel != null)
+{
+
+    <div id="gridContent" style=" padding:20px; ">
+        @grid.GetHtml(
+         tableStyle: "webgrid-table",
+         headerStyle: "webgrid-header",
+         footerStyle: "webgrid-footer",
+         alternatingRowStyle: "webgrid-alternating-row",
+         selectedRowStyle: "webgrid-selected-row",
+         rowStyle: "webgrid-row-style",
+         mode: WebGridPagerModes.All,
+         columns:
+             grid.Columns(
+              grid.Column("Notification ID", format: @<text>  <span class="display-mode">@item.ID </span><label id="lblNotificationID" class="edit-mode">@item.ID</label> </text>, style: "col1Width"),
+
+              grid.Column("Person", format:@<text>  <span class="display-mode"> <label id="lblUserRoleID">@item.UserName</label> </span><span class="edit-mode "> <label id="lblUserRoleID">@item.UserName</label> </span></text>, style: "col1Width"),
+
+              grid.Column("Notifications", format: @<text>  <span class="display-mode"><label id="lblNotifications">@item.Notifications</label></span><input type="text" id="Notifications" value="@item.Notifications" class="edit-mode" /></text>, style: "col2Width"),
+
+              grid.Column("Created DateTime", format: @<text>  <span class="display-mode">@item.Created_DateTime</span><label id="lblCreatedDate" class="edit-mode">@item.Created_DateTime</label></text>, style: "col2Width"),
+
+              grid.Column("Expiry DateTime", format:@<text>  <span class="display-mode"><label id="lblExpiry">@(item.Expiry)</label></span> <input type="text" id="Expiry" value="@item.Expiry" class="edit-mode date-picker" /></text>, style: "col2Width"),
+
+              grid.Column("Action", format: @<text>
+                    <button class="edit-user display-mode">Edit</button>
+                    <button class="save-user edit-mode">Save</button>
+                    <button class="cancel-user edit-mode">Cancel</button>
+                    <button class="delete-user edit-mode">Delete</button>
+            </text>, style: "col2Width", canSort: false)
+         ))
+    </div>
+
+    <input type="button" class="submitBtn" style="display: flex; justify-content: center;" value="New Notification" onclick="@("window.location.href='" + @Url.Action("NewNotification", "Administrator") + "'");" />
+
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+}
+</body>
+
+</html>
+

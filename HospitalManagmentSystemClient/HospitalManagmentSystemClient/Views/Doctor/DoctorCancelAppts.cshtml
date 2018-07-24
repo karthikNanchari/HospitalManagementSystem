@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "Doctor Cancel Appointments";
+}
+
+<h5>Doctor Cancel Appointments</h5>
+
+@model IEnumerable<Models.AppointmentModel>
+
+<!Doctype Html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+        var $j = jQuery.noConflict();
+        $j(function () {
+            $j('.date-picker').datepicker({
+
+                    defaultDate: "+1w",
+                //defaultDate: new Date(),
+                    defaultDate: new Date($(this).val().slice(-4), $(this).val().substring(0, 2), 1),
+                    changeMonth: true,
+                    numberOfMonths: 1,
+                    minDate: 0,
+                    maxDate: "+3Y",
+                    startDate: new Date($(this).val().slice(-4), $(this).val().substring(0, 2), 1),
+
+
+
+                    @*onSelect: function (dateText, instance) {
+                        var d = dateText.toString();
+                        var PatDocId = $('#doctor :selected').val();
+
+                        console.log(PatDocId);
+                        var apmtModel =
+                            {
+                                "patient_Id": 0,
+                                "timings": d,
+                                "doctor_ID": PatDocId
+                            };
+
+
+                        $.ajax({
+                            type: "POST",
+                            url: '@Url.Action("GetAvailableTimings", "Doctor")' ,// "GetAvailableTimings",
+                            data: JSON.stringify(apmtModel),
+                            contentType: "application/json; charset=utf-8",
+                           // dataType: "json",
+                            success: function (data) {
+                                $("#timingsDropDown").empty();
+                                $.each(data, function (i, obj) {
+                                    var p = new Option(obj.Text, obj.Value);
+                                    $("#timingsDropDown").append(p);
+                                });
+                            }
+                        });
+                    }*@
+                }
+
+                );
+        });
+    </script>
+
+
+</head>
+<body>
+    @section ContentBreadCrumBar
+{
+        <a class="glyphicon glyphicon-home"> Doctor Cancel Appointments</a>
+    }
+
+
+    <table>
+        <tr>
+
+            @using (Html.BeginForm("GetAppointmentsByDate", "Doctor", FormMethod.Post, new { enctype = "multipart/form" }))
+            {
+                <td>@Html.TextBox("test", "", new { @Class = "date-picker" })</td>
+                <td><input type="submit" value="Select All Appointments" /></td>
+                @*<td><input type="submit" value="Cancel All Appointments" /></td>*@
+
+            }
+        </tr>
+    </table>
+
+    <br/>
+    <br />
+
+
+    <table border="1" id="detailsTable" style="width:100%">
+        <thead>
+            <tr>
+                <th>Appointment Number</th>
+                <th>Patient </th>
+                <th>Appointment Date</th>
+                <th>Appointment Time</th>
+            </tr>
+        </thead>
+        @foreach (var apmnt in Model)
+        {
+            <tr style="text-align:center">
+                <td>
+                    @apmnt.appointment_ID
+                </td>
+                <td>
+                    @apmnt.patientName
+                </td>
+                <td>
+                    @((apmnt.appointment_Date).ToShortDateString())
+                </td>
+                <td>
+                    @apmnt.timings
+                </td>
+                
+            </tr>
+        }
+    </table>
+
+    <table>
+        <tr>
+
+            @using (Html.BeginForm("cancelAllAppointmentByDate", "Doctor", FormMethod.Post, new { enctype = "multipart/form" }))
+            {
+                <td>@Html.Hidden("test", "", new { @Class = "date-picker" })</td>
+                <td><input type="submit" value="Cancel All Appointments" /></td>
+            }
+        </tr>
+    </table>
+
+</body>
+</html>
+
+

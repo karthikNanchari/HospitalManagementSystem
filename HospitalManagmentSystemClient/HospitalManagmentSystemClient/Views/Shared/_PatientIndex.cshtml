@@ -1,0 +1,39 @@
+﻿<div class=".navbar-fixed-left">
+<table style="background-color:#e0c976">
+    <tr style="height: 25%">
+        <td>
+            <table style="width:40%;">
+                <tr>
+                    <td>
+                        @Html.ActionLink("Home", "Index", "Patient")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ActionLink("Book Appointment", "PatientBookAppointment", "PatientBookAppointment")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ActionLink("View/Edit Appointment", "GetAppointments", "PatientAppointment")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ActionLink("View/Pay Bills", "MakeRequest", "MakeRequest")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ActionLink("Send Email", "Index", "Email")
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+    </div>
+

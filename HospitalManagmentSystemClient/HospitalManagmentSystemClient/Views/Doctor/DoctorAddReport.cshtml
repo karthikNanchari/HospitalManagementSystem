@@ -1,0 +1,80 @@
+﻿@model Models.ReportModel
+
+@*@{
+    ViewBag.Title = "DoctorAddReport";
+}*@
+
+@section ContentBreadCrumBar
+    {
+    <a class="glyphicon "> Doctor Add Report</a>
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="karthik" content="">
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+    <script>
+
+    var $j = jQuery.noConflict();
+    $j(function () {
+        // This will make every element with the class "date-picker" into a DatePicker element
+        $j('.date-picker').datepicker();
+    });
+    </script>
+    <style>
+        table#detailsTable {
+            width: 60% !important;
+        }
+    </style>
+
+
+</head>
+<body>
+
+  
+    @using (Html.BeginForm("CreateReport", "Doctor", FormMethod.Post, new { enctype = "multipart/form" }))
+    {
+        <table border="1" id="detailsTable" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Select Patient</th>
+                    <th>Report Generated Time</th>
+                    <th style="">Date</th>
+                    <th>Lab Result</th>
+                </tr>
+            </thead>
+                <tr style="text-align:center">
+                    <td>
+                       @Html.DropDownListFor(i => i.patient_ID, (SelectList)ViewBag.GetPatientsList, "--Select--")
+                    </td>
+                    <td>
+                        @Html.DropDownListFor(i => i.reportTime, new List<SelectListItem> {
+                                   new SelectListItem{ Value="-Select", Text="-Select-"},
+                               new SelectListItem{ Value="09:00", Text="09:00"},
+                               new SelectListItem{ Value="10:00", Text="10:00"},
+                               new SelectListItem{ Value="11:00", Text="11:00"},
+                               new SelectListItem{ Value="12:00", Text="12:00"},
+                               new SelectListItem{ Value="13:00", Text="13:00"}})
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(i => i.date, "", new { @class = "date-picker" })
+                    </td>
+                    <td>
+                        @Html.TextAreaFor(i => i.labResult)
+                    </td>
+                </tr>
+        </table>
+        <input type="submit" value="Submit Report" class="btn btn-info btn-block">
+    }
+    
+
+</body>
+</html>

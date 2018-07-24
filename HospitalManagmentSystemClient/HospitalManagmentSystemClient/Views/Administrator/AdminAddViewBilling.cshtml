@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Admin New Billing";
+}
+@model Models.AccountModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="karthik" content="">
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+    
+    
+    
+    <script>
+
+        function patID() {
+            var patientID = $("#patient_ID").val();
+
+            $.ajax({
+                type: "POST",
+                url: "GetAppointmentsWithNoBilling",
+                data: "{ 'patientID':'" + patientID + "'}",
+                contentType: "application/json; charset=utf-8",
+                 dataType: "json",
+                success: function (data) {
+                    $("#Appointment_ID").empty();
+
+                    $.each(data, function (i, obj) {
+                        
+                        var p = new Option(obj.Text, obj.Value);
+                        $("#Appointment_ID").append(p);
+                    });
+                }
+            });
+
+
+        }
+
+
+    </script>
+
+</head>
+<body>
+
+    @section ContentBreadCrumBar
+    {
+        <a class="glyphicon glyphicon-home"> Admin Add Billing</a>
+    }
+        <table id="detailsTable">
+            <thead>
+                <tr>
+                    <th>Patient Name</th>
+                    <th>Appointment ID</th>
+                    <th>Medical Fee</th>
+                    <th>Hospital Fee</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tr>
+                @using (Html.BeginForm("AddAccountDetail", "Administrator", FormMethod.Post, new { enctype = "multipart/form" }))
+                {
+                    <td style="text-align: center">@Html.DropDownListFor(i => i.patient_ID, new SelectList(Model.patientdropDown, "Value", "Text"), "-Select-", new { onchange = "patID()" })</td>
+                    <td style="text-align: center">@Html.DropDownListFor(i => i.appointment_ID, new SelectList(Model.AppointmentIDDropDown),"-Select-", new { id= "Appointment_ID" })</td>
+                    <td style="text-align: center">@Html.TextBoxFor(i => i.medicines_Fee, new { Type="number"} )</td>
+                    <td style="text-align: center">@Html.TextBoxFor(i => i.hospital_Fee, new { Type = "number" })</td>
+                    <td style="text-align: center"><input type="submit" value="Save Billing" /></td>
+                }
+            </tr>
+        </table>
+</body>
+</html>

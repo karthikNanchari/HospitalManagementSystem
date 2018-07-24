@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Report Availability";
+}
+
+<h4 style="text-align: center; padding-top:5%;">Report not yet generated for this Appointment</h4>
+
+<input type="button" value="View Appointments" style="align-content:center" onclick="@("window.location.href='" + @Url.Action("GetAppointments", "Doctor" ) +"'");" />
+
+

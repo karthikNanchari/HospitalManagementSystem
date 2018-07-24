@@ -1,0 +1,270 @@
+﻿
+@{
+    ViewBag.Title = "ViewAccountDetails";
+}
+@{
+    var grid = new WebGrid(Model);
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="karthik" content="">
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+
+    <script>
+
+
+        function editPatientDetails() {
+            var x = document.getElementById("editPatientDetails");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        $(function () {
+            $('.edit-mode').hide();
+
+
+            $('.edit-user, .cancel-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                tr.find('.edit-mode, .display-mode').toggle();
+            });
+
+            $('.save-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                var PatPatientID = tr.find("#lblPatientID").html();
+                var PatFirstName = tr.find("#FirstName").val();
+                var PatLastName = tr.find("#LastName").val();
+                var PatEmailID = tr.find("#EmailID").val();
+                var PatPwd = tr.find("#Pwd").val();
+                var PatPhone = tr.find("#Phone").val();
+                var PatDateOfBirth = tr.find("#DateOfBirth").val();
+                var PatGender = tr.find("#selectGender").find(":selected").val(); //option:selected").text();
+                var PatAddress = tr.find("#Address").val();
+                var PatIsActive = tr.find("#selectIsActive :selected").val();  //option:selected").text();
+                var PatPatientType = tr.find("#selectDocType").find(":selected").val(); //option:selected").text();
+                var PatPatientDept = tr.find("#selectDoctDepartment").find(":selected").val(); //option:selected").text();
+
+                console.log(PatGender);
+                console.log(PatIsActive);
+                console.log(PatPatientType);
+
+                var Doctor =
+                    {
+                        "pid": PatPatientID,
+                        "firstName": PatFirstName,
+                        "lastName": PatLastName,
+                        "emailID": PatEmailID,
+                        "phone": PatPhone,
+                        "dateOfBirth": PatDateOfBirth,
+                        "gender": PatGender,
+                        "address": PatAddress,
+                        "isActive": PatIsActive,
+                        "drDesignation": PatPatientType,
+                        "drDepartment": PatPatientDept
+                    };
+                $.ajax({
+                    url: '/Doctor/ManageAccount',
+                    data: JSON.stringify(Doctor),
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    success: function () {
+                        location.reload();
+                    }
+                });
+
+            });
+
+            $('.edit-user').on('click', function () {
+                var tr = $(this).parents('tr:first');
+                var PatPatientID = tr.find("#PatientID").html();
+                var PatFirstName = tr.find("#FirstName").val();
+                var PatLastName = tr.find("#LastName").val();
+                var PatEmailID = tr.find("#EmailID").val();
+                var PatPhone = tr.find("#Phone").val();
+                //var PatDateOfBirth = tr.find("#DateOfBirth").val();
+                var PatGender = tr.find("#Gender  option :selected").text();
+                var PatAddress = tr.find("#Address").val();
+                var PatIsActive = tr.find("#IsActive  option :selected").val();
+                var PatPatientType = tr.find("#PatientType  option :selected").text();
+
+                tr.find("#PatientID").text(PatPatientID);
+                tr.find("#FirstName").text(PatFirstName);
+                tr.find("#LastName").text(PatLastName);
+                tr.find("#EmailID").text(PatEmailID);
+                tr.find("#Phone").text(PatPhone);
+                //tr.find("#DateOfBirth").text(PatDateOfBirth);
+                tr.find("#Gender").text(PatGender);
+                tr.find("#Address").text(PatAddress);
+                tr.find("#IsActive").text(PatIsActive);
+                tr.find("#PatientType").text(PatPatientType);
+               // tr.find('.edit-mode, .display-mode').toggle();
+
+            });
+
+            //var $j = jQuery.noConflict();
+            //$j(function () {
+            //    // This will make every element with the class "date-picker" into a DatePicker element
+            //    $j('.date-picker').datepicker();
+            //});
+        })
+    </script>
+    <style type="text/css">
+        .edit-mode {
+            width: 100%;
+        }
+
+        .edit-user {
+            width: 100%;
+        }
+
+            .edit-user display-mode {
+                width: 100%;
+            }
+
+        .save-user edit-mode {
+            width: 100%;
+        }
+
+        .display-mode {
+            width: 100%;
+        }
+
+        .cancel-user {
+            width: 100%;
+        }
+
+        .webgrid-table {
+            font-family: Arial,Helvetica,sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            width: 110%;
+            display: table;
+            border-collapse: collapse;
+            border: solid px #C5C5C5;
+            background-color: white;
+        }
+
+            .webgrid-table td, th {
+                border: 1px solid #C5C5C5;
+                padding: 3px 7px 2px;
+                /*width: 100%;*/
+            }
+
+        .webgrid-header, .webgrid-header a {
+            background-color: #0094ff;
+            color: #ffffff;
+            text-align: left;
+            text-decoration: none;
+        }
+
+        .webgrid-footer {
+        }
+
+        .webgrid-row-style {
+            padding: 3px 7px 2px;
+        }
+
+        .webgrid-alternating-row {
+            background-color: azure;
+            padding: 3px 7px 2px;
+        }
+
+        .col1Width {
+            width: 55px;
+        }
+
+        .col2Width {
+            width: 220px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    @section ContentBreadCrumBar
+        {
+        <a class="glyphicon glyphicon-home"> Admin View Patients</a>
+    }
+
+
+    <div id="gridContent" style=" padding:20px; ">
+        @grid.GetHtml(
+        tableStyle: "webgrid-table",
+        headerStyle: "webgrid-header",
+        footerStyle: "webgrid-footer",
+        alternatingRowStyle: "webgrid-alternating-row",
+        selectedRowStyle: "webgrid-selected-row",
+        rowStyle: "webgrid-row-style",
+        mode: WebGridPagerModes.All,
+        columns:
+            grid.Columns(
+             grid.Column("PatientID", format: @<text>  <span class="display-mode">@item.pid </span>
+            <label id="lblPatientID" class="edit-mode">@item.pid</label> </text>, style: "col1Width"),
+
+             grid.Column("FirstName", format:@<text>  <span class="display-mode"> <label id="lblFirstName">@item.firstName</label> </span> <input type="text" id="FirstName" value="@item.firstName" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("LastName", format: @<text>  <span class="display-mode"><label id="lblLastName">@item.lastName</label></span><input type="text" id="LastName" value="@item.lastName" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("EmailID", format: @<text>  <span class="display-mode"><label id="lblEmailID">@item.emailID</label> </span> <input type="email" id="EmailID" value="@item.emailID" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("Password", format: @<text>  <span class="display-mode"><label id="lblPwd">@item.pwd</label> </span> <input type="text" id="Pwd" value="@item.Pwd" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("Phone", format:@<text>  <span class="display-mode"><label id="lblPhone">@item.phone</label></span> <input type="number" maxlength=10 id="Phone" value="@item.phone" placeholder="1324567890" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("DateOfBirth", format:@<text>  <span class="display-mode"><label id="lblDateOfBirth">@((item.dateOfBirth).ToString("MM-dd-yyyy"))</label></span> <input type="date" id="DateOfBirth" value="@((item.dateOfBirth).ToString("MM-dd-yyyy"))" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("Gender", format: @<text>  <span class="display-mode"><label id="lblGender">@item.gender</label></span> <select id="selectGender" class="edit-mode" value="@item.gender">
+                <option value="">-Select-</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>       </text>, style: "col1Width"),
+
+             grid.Column("Address", format: @<text>  <span class="display-mode"><label id="lblAddress">@item.address</label></span> <input type="text" id="Address" value="@item.address" class="edit-mode" /></text>, style: "col2Width"),
+
+             grid.Column("IsActive", format: @<text>  <span class="display-mode"><label id="lblIsActive">@item.isActive</label></span> <select id="selectIsActive" class="edit-mode" value="@item.isActive">
+                <option value="">-Select-</option>
+                <option value="true">true</option>
+                <option value="false">false</option>
+            </select>       </text>, style: "col1Width"),
+
+             grid.Column("Designation", format: @<text>  <span class="display-mode"> <label id="lblDocType">@item.drDesignation</label></span> <select id="selectDocType" class="edit-mode" value="@item.drDesignation">
+                <option value="">-Select-</option>
+                <option value="GeneralManager">GeneralManager</option>
+                <option value="Surgeon">Surgeon</option>
+                <option value="Senior">Senior</option>
+                <option value="Junior">Junior</option>
+            </select>       </text>, style: "col1Width"),
+               
+                grid.Column("Department", format: @<text>  <span class="display-mode"> <label id="lblDocDepartment">@item.drDepartment</label></span> <select id="selectDoctDepartment" class="edit-mode" value="@item.drDepartment">
+                    <option value="">-Select-</option>
+                    <option value="Radiologist">Radiologist</option>
+                    <option value="Orthopedics">Orthopedics</option>
+                    <option value="Dental">Dental</option>
+                </select>       </text>, style: "col1Width"),
+
+             grid.Column("Action", format: @<text>
+                    <button class="edit-user display-mode">Edit</button>
+                    <button class="save-user edit-mode">Save</button>
+                    <button class="cancel-user edit-mode">Cancel</button>
+            </text>, style: "col3Width", canSort: false)
+        ))
+    </div>
+
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+</body>
+
+</html>
+

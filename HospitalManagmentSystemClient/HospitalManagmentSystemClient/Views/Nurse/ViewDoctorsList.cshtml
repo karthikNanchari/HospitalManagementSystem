@@ -1,0 +1,21 @@
+﻿@model Models.AppointmentModel
+@{
+    ViewBag.Title = "View Doctors List";
+}
+
+
+@section ContentBreadCrumBar
+    {
+    <a class="glyphicon ">Nurse View DoctorsList</a>
+}
+
+<table>
+    <tr>
+        @using (Html.BeginForm("ViewDoctorAppointments", "Nurse", FormMethod.Post, new { enctype = "multipart/form" }))
+        {
+            <td>&nbsp;&nbsp;@Html.DropDownListFor(i => i.doctor_ID, new SelectList(Model.dropDown, "Value", "Text"), "--Select--")</td>
+
+            <td><input type="submit" value="Submit" /></td>
+        }
+    </tr>
+</table>

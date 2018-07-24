@@ -1,0 +1,22 @@
+﻿
+
+@{
+    ViewBag.Title = "View Patient List";
+}
+
+@model Models.AppointmentModel
+
+
+<h3>Select Patient</h3>
+
+<table>
+    <tr>
+        @using (Html.BeginForm("SelectPatientsForPayments", "Administrator", FormMethod.Post, new { enctype = "multipart/form" }))
+        {
+            <td>&nbsp;&nbsp;@Html.DropDownListFor(i => i.paitent_ID, new SelectList(Model.dropDown, "Value", "Text"), "--Select--")</td>
+
+            <td><input type="submit" value="Submit" /></td>
+        }
+    </tr>
+</table>
+

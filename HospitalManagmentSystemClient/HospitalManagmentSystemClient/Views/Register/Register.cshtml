@@ -1,0 +1,159 @@
+﻿@model Models.PersonModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<html>
+<head>
+    @*<script src = "@Url.Content("http://code.jquery.com/jquery-3.3.1.min.js")"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>*@
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+
+    <script type="text/javascript">
+        var $j = jQuery.noConflict();
+        $j(function () {
+            // This will make every element with the class "date-picker" into a DatePicker element
+            $j('.date-picker').datepicker();
+        });
+
+
+        //$j("#role").on("change", function () {
+        //    if ($j("#role option:selected").index() == 1) {
+        //        $j("#docotorType").hide();
+        //        $j("#patientType").show();
+        //    } else if ($j("#role option:selected").index() == 2) {
+        //        $j("#patientType").hide();
+        //        $j("#doctorType").show();
+        //    } else {
+        //        $j("#patientType").hide();
+        //        $j("#doctorType").hide();
+        //    }
+        //});
+
+        $("#optionId").on("change", function () {
+            if ($("#optionId option:selected").index() == 0) {
+                $("#controlId").hide();
+            } else {
+                $("#controlId").show();
+            }
+        });
+
+        $j("#role").click( function () {
+            if ($j("#role option:selected").index() == 1) {
+                $j("#docotorType").hide();
+                $j("#patientType").show();
+            } else if ($j("#role option:selected").index() == 2) {
+                $j("#patientType").hide();
+                $j("#doctorType").show();
+            } else {
+                $j("#patientType").hide();
+                $j("#doctorType").hide();
+            }
+        });
+    </script>
+
+</head>
+<body>
+
+
+
+    <h2>Register</h2>
+
+    @using (Html.BeginForm("RegisterUser", "Register", FormMethod.Post, new { enctype = "multipart/form" }))
+    {
+        <table>
+            <tr>
+                <td>First Name: </td>
+                <td>@Html.TextBoxFor(i => i.firstName) </td>
+            </tr>
+
+            <tr>
+                <td>Testing</td>
+                @*<td>@Html.DropDownList("optionId", new SelectList(), "Select an option")
+
+                @Html.TextBox("controlId")</td>*@
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td>@Html.TextBoxFor(i => i.lastName) </td>
+            </tr>
+            <tr>
+                <td>Role </td>
+                <td>
+                    @Html.DropDownList("role", new List<SelectListItem> {
+                   new SelectListItem{ Value="-Select", Text="-Select-"},
+               new SelectListItem{ Value="Patient", Text="Patient"},
+               new SelectListItem{ Value="Doctor", Text="Doctor"},
+               new SelectListItem{ Value="Nurse", Text="Nurse"},
+               new SelectListItem{ Value="Adminstrator", Text="Administrator"},
+               new SelectListItem{ Value="LabIncharge", Text="LabIncharge"}})
+                </td>
+            </tr>
+            <tr>
+                <td>EmailId</td>
+                <td>@Html.TextBoxFor(i => i.emailID) </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>@Html.TextBoxFor(i => i.pwd) </td>
+            </tr>
+            <tr>
+                <td>Re Enter Password</td>
+                <td> </td>
+            </tr>
+            <tr>
+                <td>Gender: </td>
+                <td>
+                    @Html.DropDownListFor(i => i.gender, new List<SelectListItem>
+           { new SelectListItem { Value="Male", Text="Male" },
+           new SelectListItem{ Value="Female", Text="Female"},
+           new SelectListItem{Value="Other", Text="Other" } })
+                </td>
+            </tr>
+            <tr>
+                <td>Address: </td>
+                <td>@Html.TextBoxFor(i => i.address) </td>
+            </tr>
+            <tr>
+                <td>Phone Number: </td>
+                <td>@Html.TextBoxFor(i => i.phone) </td>
+            </tr>
+            <tr>
+                <td>Security Question: </td>
+                <td>
+                    @Html.TextBoxFor(i => i.securityQn, new List<SelectListItem>
+                { new SelectListItem{ Value="-Select-", Text ="-Select-"},
+                 new SelectListItem { Value = "What is your pet name", Text = "What is your pet name" } ,
+                 new SelectListItem { Value = "What is your favourite place/City", Text = "What is your favourite place/City" } ,
+                 new SelectListItem { Value = "What is your favourite Cartoon", Text = "What is your favourite Cartoon" } ,
+                 new SelectListItem { Value = "What is your favourite Hobby", Text = "What is your favourite Hobby" } ,
+                 new SelectListItem { Value = "What is your favourite Color", Text = "What is your favourite Color" } })
+                </td>
+            </tr>
+            <tr>
+                <td>Security Answer: </td>
+                <td>@Html.TextBoxFor(i => i.securityAns) </td>
+            </tr>
+            <tr>
+                <td>Date Of Birth</td>
+                <td>@Html.TextBoxFor(i => i.dateOfBirth, "", new { @class = "date-picker" })</td>
+            </tr>
+            <tr id="patientType">
+                <td>Patient Type</td>
+                <td></td>
+            </tr>
+            <tr id="doctorType">
+                <td>Doctor Type</td>
+                <td></td>
+            </tr>
+
+        </table>
+        <input type="submit" value="Register" />
+    }
+
+</body>
+
+</html>

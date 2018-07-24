@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Models.AppointmentModel>
+@{
+    ViewBag.Title = "NurseViewDoctorAppointments";
+}
+
+@section ContentBreadCrumBar
+    {
+    <a class="glyphicon"> Nurse View Doctor Appointments</a>
+}
+<!Doctype Html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="@Url.Content("~/Content/themes/base/jquery-ui.min.css")" rel="stylesheet" />
+    <script src="@Url.Content("~/Scripts/jquery-1.12.4.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.12.1.min.js")"></script>
+    <link href="~/Scripts/tableStyle.css" rel="stylesheet" />
+    <script type="text/javascript">
+
+
+    </script>
+</head>
+<body>
+
+                    <table id="detailsTable">
+                        <thead>
+                            <tr>
+                                <th>Appointment Number</th>
+                                <th>Patient Name </th>
+                                <th>Appointment Date</th>
+                                <th>Appointment Time</th>
+                            </tr>
+                        </thead>
+                        @foreach (var apmnt in Model)
+                        {
+                            <tr style="text-align:center">
+                                <td>
+                                    @apmnt.appointment_ID
+                                </td>
+                                <td>
+                                    @apmnt.patientName
+                                </td>
+                                <td>
+                                    @((apmnt.appointment_Date).ToShortDateString())
+                                </td>
+                                <td>
+                                    @apmnt.timings
+                                </td>
+                            </tr>
+                        }
+                    </table>
+
+  
+
+</body>
+</html>

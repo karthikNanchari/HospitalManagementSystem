@@ -1,0 +1,101 @@
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Client_Api.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Client_Api.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Models.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Formatting.Compact.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.RollingFile.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.Seq.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.Trace.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Models.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Formatting.Compact.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.PeriodicBatching.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.RollingFile.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.Seq.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.Trace.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\obj\Debug\Client_Api.csprojResolveAssemblyReference.cache
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\obj\Debug\Client_Api.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagmentSystemClient\Client_Api\obj\Debug\Client_Api.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Client_Api.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Client_Api.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Models.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Formatting.Compact.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.RollingFile.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.Seq.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.Trace.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.Mvc.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.Razor.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.WebPages.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Models.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Formatting.Compact.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.PeriodicBatching.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.RollingFile.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.Seq.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.Trace.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.Mvc.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.Razor.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.WebPages.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\obj\Debug\Client_Api.csprojResolveAssemblyReference.cache
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\obj\Debug\Client_Api.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Client\HospitalManagmentSystemClient\Client_Api\obj\Debug\Client_Api.pdb
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Client_Api.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Client_Api.pdb
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Models.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Newtonsoft.Json.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Formatting.Compact.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.File.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.PeriodicBatching.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.RollingFile.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.Seq.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.Trace.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.Mvc.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.Razor.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.WebPages.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Models.pdb
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Newtonsoft.Json.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Formatting.Compact.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.File.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.PeriodicBatching.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.RollingFile.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.Seq.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Serilog.Sinks.Trace.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.Mvc.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.Razor.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.WebPages.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\obj\Debug\Client_Api.csprojAssemblyReference.cache
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\obj\Debug\Client_Api.csproj.CoreCompileInputs.cache
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\obj\Debug\Client_Api.csproj.CopyComplete
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\obj\Debug\Client_Api.dll
+C:\Users\nkaru\Desktop\Projects\HospitalMangementSystem\HospitalManagmentSystemClient\Client_Api\obj\Debug\Client_Api.pdb
