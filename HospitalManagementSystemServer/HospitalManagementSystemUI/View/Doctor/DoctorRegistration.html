@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Doctor Registration Page</title>
+
+    <link href="../../Scripts/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.10/angular-ui-router.min.js"></script>
+
+
+
+
+</head>
+<body>
+    <form id="form1" runat="server" ng-controller="loginController">
+        <!--Nav bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                Hospital Managment System
+                <!-- <img src="../../Images/Hospital logo.png" alt="HospitalLogo" style="width:150px; height:40px; " />-->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../Home/LandingPage.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Login/Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-inline my-2 my-lg-0">
+                <a class="active" style="color:white;margin-right:30px"><h4>Doctor Registration</h4> <span style=""></span> </a>
+            </div>
+        </nav>
+
+        <!--Body-->
+        <fieldset>
+            <!-- Name Section -->
+            <div class="row">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h3 style="text-align:center">Doctor Personal Details</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 panel panel-warning">
+                    <div class="panel-body border-1">
+                        <div class="col-xs-2"> </div>
+
+                        <div class="col-xs-10">
+                            <!--<div class="border-1">-->
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-6 col-md-4">
+                                        <input type="text" name="fistName" placeholder="First Name*" class="form-control">
+                                    </div>
+                                    <div class="col-xs-6 col-md-4">
+                                        <input type="text" name="lastName" placeholder="Last Name*" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-4" style="margin-top:8px; text-align:center">
+                                        <label>Date of Birth*</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="date" placeholder="Date Of Birth" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-4" style="margin-top:6px;text-align:center ">
+                                        <!-- -->
+                                        <label>Gender*</label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <select type="gender" style="height:auto" placeholder="Gender" class="form-control">
+                                            <option value="select">Select</option>
+                                            <option value="female">Female</option>
+                                            <option value="male">Male</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+             
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-9" style="margin-left:0px">
+                                        <input type="text" name="addressLine1" placeholder="Address Line 1*" class="form-control">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-9" style="margin-left:0px">
+                                        <input type="text" name="addressLine2" placeholder="Address Line 2" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <input type="text" placeholder="Department*" class="form-control" />
+                                       
+                                    </div>
+                                    <div class="col-sm-4">
+                                       <input type="text" placeholder="Designation*" class="form-control" />
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <input placeholder="Phone Number" class="form-control">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input type="email"  placeholder="Email" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <input placeholder="Password*" class="form-control">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input placeholder="Re Enter Password*" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <input placeholder="Security Question*" class="form-control">
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input placeholder="Security Answer*" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div>
+                                    <button type="submit" style="width:150px; margin-left:10px" class="btn btn-danger">Clear</button>
+                                    <span style="margin-left:100px"></span>
+                                    <button type="submit" style="width:150px" class="btn btn-primary">Save</button>
+                                </div>
+                            </div> <!-- end of panel warning -->
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </fieldset>
+
+
+        <!--footer-->
+        <div class="footer-copyright navbar-dark bg-dark">
+            <div class="container-fluid" style="text-align:center; color:white">
+                © 2018 Copyright: <a href="https://www.karthiknanchari.com" style="color:white"> Karthik Nanchari </a>
+
+            </div>
+        </div>
+    </form>
+    <script src="../../Scripts/Bootstrap/jquery.min.js"></script>
+    <script src="../../Scripts/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

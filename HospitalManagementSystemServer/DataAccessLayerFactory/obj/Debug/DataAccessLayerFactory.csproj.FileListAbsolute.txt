@@ -1,0 +1,24 @@
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\HospitalManagementSystem.mdf
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\HospitalManagementSystem_log.ldf
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\DataAccessLayerFactory.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\DataAccessLayerFactory.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\DataAccessLayer.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\BusinessObject.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\DataAccessLayer.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\DataAccessLayer.dll.config
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\BusinessObject.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayerFactory\obj\Debug\DataAccessLayerFactory.csprojResolveAssemblyReference.cache
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayerFactory\obj\Debug\DataAccessLayerFactory.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayerFactory\obj\Debug\DataAccessLayerFactory.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\HospitalManagementSystem.mdf
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\HospitalManagementSystem_log.ldf
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\DataAccessLayerFactory.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\DataAccessLayerFactory.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\DataAccessLayer.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\BusinessObject.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\DataAccessLayer.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\DataAccessLayer.dll.config
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayerFactory\bin\Debug\BusinessObject.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayerFactory\obj\Debug\DataAccessLayerFactory.csprojResolveAssemblyReference.cache
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayerFactory\obj\Debug\DataAccessLayerFactory.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayerFactory\obj\Debug\DataAccessLayerFactory.pdb

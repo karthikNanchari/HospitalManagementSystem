@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="login">
+<head runat="server">
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+
+    <link href="../../Scripts/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <!--<script src="../../Scripts/AngularJs/angular.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <!--<script src="../../Scripts/AngularJs/angular-animate.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.10/angular-ui-router.min.js"></script>
+
+    <script src="../api-service.js"></script>
+    <script src="login.js"></script>
+    <script src="login-service.js"></script>
+    <script src="login-controller.js"></script>
+
+</head>
+
+<body>
+    <div id="form1" runat="server" ng-controller="loginController">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="container" ng-app="login" ng-controller="loginController">
+            <div class="row">
+                <div class="col-sm"></div>
+                <form ng-submit="loginButtonClick()" class="col-sm">
+                    <h3><label ng-if="viewModel.displayTitle" style="color:navy">{{viewModel.title}}</label></h3>
+                    <div class="px-4 py-3">
+                        <div class="form-group">
+                            <div>
+                                <p ng-if="viewModel.displayError" style="color: red">{{viewModel.errorLabel}}</p>
+                            </div>
+                            <label>UserID</label>
+                            <input class="form-control" ng-model="viewModel.userName" placeholder="####" />
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input class="form-control" ng-model="viewModel.password" placeholder="******" />
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" />
+                                Remember me
+                            </label>
+                        </div>
+                        <button class="btn btn-primary" type="submit" ng-click="loginButtonClick()">Sign in</button>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a href="" data-toggle="modal" data-target="#detailsModal">New around here? Sign up</a>
+                    <a class="dropdown-item" href="#">Forgot password?</a>
+                </form>
+
+
+                
+                <!-- end of model div for selecting role -->
+                <!-- details modal -->
+                <div class="modal fade" id="detailsModal" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Please Fill all the Fields below</h3> &nbsp; &nbsp;
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="form-horizontal" role="form">
+                                        <div class="form-group">
+                                            <div class="col-sm-9 control-label">
+                                                <label for="firstName">First Name</label>
+                                                <input type="text" ng-model="viewModel.firstName" placeholder="First Name" class="form-control" autofocus>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-sm-9 control-label">
+                                                <label for="lastName">Last Name</label>
+                                                <input type="text" ng-model="viewModel.lasttName" placeholder="Last Name" class="form-control" autofocus>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="email" class="col-sm-3 control-label">Email</label>
+                                            <div class="col-sm-9">
+                                                <input type="email" ng-model="viewModel.email" placeholder="Email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password" class="col-sm-3 control-label">Password</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" ng-model="viewModel.password" placeholder="Password" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="ReEnter password" class="col-sm-3 control-label">ReEnter Password</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" ng-model="viewModel.ReEnterpassword" placeholder="ReEnter Password" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phoneNumber" class="col-sm-3 control-label">Phone Number</label>
+                                            <div class="col-sm-9">
+                                                <input ng-model="viewModel.phoneNumber" placeholder="(###)-###-####" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
+                                            <div class="col-sm-9">
+                                                <input type="date" ng-model="viewModel.birthDate" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="control-label col-sm-3">Gender</label>
+                                            <div class="col-sm-6">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <label class="radio-inline">
+                                                            <input type="radio" ng-model="viewModel.female" name="genderRadio" value="Female">Female
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <label class="radio-inline">
+                                                            <input type="radio" ng-model="viewModel.male" name="genderRadio" value="Male">Male
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="securityQuestion" class="col-sm-3 control-label">Security Question</label>
+                                            <div class="col-sm-9">
+                                                <select id="role" class="form-control" ng-dropdown ng-model="viewModel.securityQuestion">
+                                                    <option ng-option value="1">What is your Mothers Maiden Name</option>
+                                                    <option ng-option value="2">What is your Favourite Movie Name</option>
+                                                    <option ng-option value="3">What is your Best Friend Name</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="securityAnswer" class="col-sm-3 control-label">Security Answer</label>
+                                            <div class="col-sm-9">
+                                                <input type="Text" ng-model="viewModel.securityAnswer" placeholder="Security Answer" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="addressLine1" class="col-sm-3 control-label">Address Line-1</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" ng-model="viewModel.addressLine1" placeholder="Address Line-1" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="addressLine2" class="col-sm-3 control-label">Address Line-2</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" ng-model="viewModel.addressLine2" placeholder="Address Line-2" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="role" class="col-sm-3 control-label">Please Select a Role</label>
+                                            <div class="col-sm-9">
+                                                <select class="form-control" ng-dropdown ng-model="role.type">
+                                                    <option ng-option value="patient">Patient</option>
+                                                    <option ng-option value="doctor">Doctor</option>
+                                                    <option ng-option value="administrator">Administrator</option>
+                                                    <option ng-option value="nurse">Nurse</option>
+                                                    <option ng-option value="labIncharge">Lab Incharge</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div ng-if="role.type =='patient'">
+                                            <label for="patientType" class="col-sm-3 control-label">Patient Type</label>
+                                            <div class="col-sm-9">
+                                                <select id="role" class="form-control" ng-dropdown ng-model="patient.type">
+                                                    <option ng-option value="InPatient">In Patient</option>
+                                                    <option ng-option value="outPatient">Out Patient/Guest Patient</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div ng-if="role.type =='doctor'">
+                                            <label for="doctorDesignation" class="col-sm-3 control-label">Doctor Designation</label>
+                                            <div class="col-sm-9">
+                                                <select id="doctorDesignation" class="form-control" ng-dropdown ng-model="doctor.designation">
+                                                    <option ng-option value="generalManager">General Manager</option>
+                                                    <option ng-option value="surgeon">Surgeon</option>
+                                                    <option ng-option value="senior">Senior</option>
+                                                    <option ng-option value="junior">Junior</option>
+                                                </select>
+                                            </div>
+                                            <label for="doctorDepartment" class="col-sm-3 control-label">Doctor Depatment</label>
+                                            <div class="col-sm-9">
+                                                <select id="doctorDepartment" class="form-control" ng-dropdown ng-model="doctor.department">
+                                                    <option ng-option value="radiologist">Radiologist</option>
+                                                    <option ng-option value="orthopedics">Orthopedics</option>
+                                                    <option ng-option value="dental">Detal</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div ng-if="role.type =='nurse'">
+                                            <label for="patientType" class="col-sm-3 control-label">Patient Type</label>
+                                            <div class="col-sm-9">
+                                                <input type="Text" id="patientType" placeholder="Patient Type" class="form-control">
+                                            </div>
+                                        </div>
+
+
+                                        <hr />
+                                        <div class="form-group">
+                                            <div class="col-sm-9 col-sm-offset-3">
+                                                <div class="checkbox">
+                                                    <label>
+                                                        <input type="checkbox">I accept <a href="#">terms</a>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div> <!-- /.form-group -->
+                                        <div class="form-group">
+                                            <div class="col-sm-9 col-sm-offset-3">
+                                                <button type="submit" ng-click="registerButtonClick()" class="btn btn-primary btn-block"> Register</button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- /form -->
+                                </div> <!-- ./container -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- end of details modal -->
+
+                <div class="col-sm"></div>
+            </div>
+        </div>
+    </div>
+    <script src="../../Scripts/Bootstrap/jquery.min.js"></script>
+    <script src="../../Scripts/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

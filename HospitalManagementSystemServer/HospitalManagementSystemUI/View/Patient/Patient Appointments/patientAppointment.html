@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pateint Home Page</title>
+
+    <link href="../../../Scripts/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.10/angular-ui-router.min.js"></script>
+
+    <!--<script src="../Patient.js"></script>-->
+    <script src="patientAppointment.js"></script>
+    <script src="../Patient-Service.js"></script>
+    <script src="../Patient-Controller.js"></script>
+    <script src="../../api-service.js"></script>
+</head>
+
+<body>
+    <form id="form1" runat="server" ng-app="patient" ng-controller="patientController">
+        <!--Nav bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" style="color:white">
+                Hospital Managment System
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../Home/LandingPage.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Login/Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-inline my-2 my-lg-0">
+                <a class="active" style="color:white;margin-right:30px"><h5>Appointment </h5> <span style=""></span> </a>
+            </div>
+            <div class="form-inline my-2 my-lg-0">
+                <a class="active" style="color:white;margin-right:30px"><h5> Settings </h5> <span style=""></span> </a>
+            </div>
+            <div class="form-inline my-2 my-lg-0">
+                <button type="button" class="btn btn-outline-danger"><h5> Logout </h5></button>
+            </div>
+        </nav>
+
+
+
+
+        <!--page body-->
+        <!--<div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseNewAppointment" aria-expanded="false" aria-controls="collapseExample">
+                 New Appointment
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseViewAppointment" aria-expanded="false" aria-controls="collapseExample">
+                 View Appointment
+            </button>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseEditAppointment" aria-expanded="false" aria-controls="collapseExample">
+                 Edit Appointment
+            </button>
+        </div>
+
+        <div class="collapse" id="collapseNewAppointment">
+            <div class="card card-block">
+                New Appointment Test
+            </div>
+        </div>
+        <div class="collapse" id="collapseViewAppointment">
+            <div class="card card-block">
+                View Appointment Test
+            </div>
+        </div>
+        <div class="collapse" id="collapseEditAppointment">
+            <div class="card card-block">
+                Edit Appointment Test
+            </div>
+        </div>-->
+
+
+        <div class="row">
+            <div class="col-6 col-md-2"></div>
+            <div class="col-6 col-md-3"> <button  onclick="hideAppointments(newAppointment)"> New Appointment </button>   </div>
+            <div class="col-6 col-md-3">  <button  onclick="hideAppointments(viewAppointment)"> View Appointment </button>   </div>
+            <div class="col-6 col-md-3"> <button  onclick="hideAppointments(editAppointment)"> Edit Appointment </button>   </div> 
+        </div>
+
+        <div id="newAppointment" value="" > new Appointment </div>
+        <div id="viewAppointmet" value="">view Appointment </div>
+        <div id="editAppointment" value=""> edit Appointment </div>
+
+
+        <!--footer-->
+        <div class="footer-copyright navbar-fixed-bottom navbar-dark bg-dark">
+            <div style="text-align:center; color:white">
+                © 2018 Copyright: <a href="https://www.karthiknanchari.com" style="color:white"> Karthik Nanchari </a>
+            </div>
+        </div>
+    </form>
+    <script src="../../../Scripts/Bootstrap/jquery.min.js"></script>
+    <script src="../../../Scripts/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

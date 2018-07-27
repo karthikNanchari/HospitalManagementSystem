@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Doctor Home Page</title>
+
+    <link href="../../Scripts/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angular-ui-router/1.0.10/angular-ui-router.min.js"></script>
+
+    <script src="Doctor.js"></script>
+    <script src="Doctor-Service.js"></script>
+    <script src="Doctor-Controller.js"></script>
+    <script src="../api-service.js"></script>
+</head>
+
+<body>
+    <form id="form1" runat="server" ng-app="" ng-controller="">
+        <!--Nav bar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" style="color:white">
+                Hospital Managment System
+                <!-- <img src="../../Images/Hospital logo.png" alt="HospitalLogo" style="width:170px; height:40px; " />-->
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../Home/LandingPage.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Login/Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="form-inline my-2 my-lg-0">
+                <a class="active" style="color:white;margin-right:30px"><h5>Welcome Doctor </h5> <span style=""></span> </a>
+            </div>
+            <div class="form-inline my-2 my-lg-0">
+                <a class="active" style="color:white;margin-right:30px"><h5> Settings</h5> <span style=""></span> </a>
+            </div>
+            <div class="form-inline my-2 my-lg-0">
+                <button type="button" class="btn btn-outline-danger"><h5>Logout </h5></button>
+            </div>
+        </nav>
+
+
+
+
+        <!--page body-->
+        <div class="row">
+            <div class="col">
+                <div class="text-center">
+                    <img src="" class="rounded" style="width:70%;height:70%;" alt="Manage Appointment">
+                </div>
+                <div class="text-center" style="margin-top:5%">
+                    <h4><a href=""> Manage Appointment </a> </h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center">
+                    <img src="" class="rounded" style="width:60%;height:60%;" alt="Manage Appointment">
+                </div>
+                <div class="text-center" style="margin-top:5%">
+                    <h4><a href=""> Check Records </a></h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center">
+                    <img src="" class="rounded" style="width:90%;"  alt="Manage Appointment">
+                </div>
+                <div class="text-center" style="margin-top:5%">
+                    <h4><a href=""> </a> </h4>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--footer-->
+        <div class="footer-copyright navbar-fixed-bottom navbar-dark bg-dark">
+            <div style="text-align:center; color:white">
+                © 2018 Copyright: <a href="https://www.karthiknanchari.com" style="color:white"> Karthik Nanchari </a>
+            </div>
+        </div>
+    </form>
+
+    <script src="../../Scripts/Bootstrap/jquery.min.js"></script>
+    <script src="../../Scripts/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

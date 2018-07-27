@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.25, 18.625" name="HospitalManagementSystem">
+  <DataContextMoniker Name="/HospitalManagementSystemDataContext" />
+  <nestedChildShapes>
+    <classShape Id="0572cf03-3ed6-445d-bab7-8d6da90332af" absoluteBounds="8.75, 5.75, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/Administrator" />
+      <nestedChildShapes>
+        <elementListCompartment Id="29bda6d8-e5fa-4ff2-8700-bb51125422a0" absoluteBounds="8.765, 6.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e0493b1-1dda-4e79-ba93-7806c96339b8" absoluteBounds="2.875, 12, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/Doctor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="39ba9a31-4608-4157-a027-1e658e9a164c" absoluteBounds="2.89, 12.46, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8a461a79-a3a0-4486-b943-a7842c2ff2f1" absoluteBounds="0.5, 11.625, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/Nurse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bba9bdc3-4528-4743-9e9b-09458c1b965e" absoluteBounds="0.51500000000000012, 12.085, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c4e4471e-f5ee-4e18-a273-6ef877528114" absoluteBounds="5.875, 4.25, 2, 3.1170068359375">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/LabIncharge" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aeb23d27-bbef-4310-b18b-9d0dc12600db" absoluteBounds="5.89, 4.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4c3b0657-c0d5-4004-8f4e-2e5c314253a9" absoluteBounds="5.5, 11.875, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/Patient" />
+      <nestedChildShapes>
+        <elementListCompartment Id="28b6ca91-1ef8-4d29-b65f-0a52f82bef71" absoluteBounds="5.515, 12.335, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4187a4b3-c003-439f-bd65-5800e07eb776" absoluteBounds="7.75, 12.875, 2, 1.9631982421875">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/Notification" />
+      <nestedChildShapes>
+        <elementListCompartment Id="076316c2-2048-4895-ad7f-c5c77c2b1e22" absoluteBounds="7.7650000000000006, 13.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.25 : 8.8670068359375); (9.25 : 12.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/Administrator/Administrator_Notification" />
+      <nodes>
+        <classShapeMoniker Id="0572cf03-3ed6-445d-bab7-8d6da90332af" />
+        <classShapeMoniker Id="4187a4b3-c003-439f-bd65-5800e07eb776" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="381cc77a-4da6-4d16-b64f-4fee3dddd856" absoluteBounds="10, 11.625, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/Treatment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d6f8d48c-6df9-4666-9808-5deb7cc4d6be" absoluteBounds="10.015, 12.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.875 : 15.374208984375); (7.51041666666667 : 15.374208984375 : JumpStart); (7.67708333333333 : 15.374208984375 : JumpEnd); (11 : 15.374208984375); (11 : 14.1651025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/Doctor/Doctor_Treatment" />
+      <nodes>
+        <classShapeMoniker Id="9e0493b1-1dda-4e79-ba93-7806c96339b8" />
+        <classShapeMoniker Id="381cc77a-4da6-4d16-b64f-4fee3dddd856" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 11.703125); (4.29166666666667 : 11.703125 : JumpStart); (4.45833333333333 : 11.703125 : JumpEnd); (5.13541616666667 : 11.703125 : JumpStart); (5.30208283333333 : 11.703125 : JumpEnd); (5.82291716666667 : 11.703125 : JumpStart); (5.98958383333333 : 11.703125 : JumpEnd); (6.65104391666667 : 11.703125 : JumpStart); (6.81771058333333 : 11.703125 : JumpEnd); (6.85416666666667 : 11.703125 : JumpStart); (7.02083333333333 : 11.703125 : JumpEnd); (7.60416666666667 : 11.703125 : JumpStart); (7.77083333333333 : 11.703125 : JumpEnd); (9.16666666666667 : 11.703125 : JumpStart); (9.33333333333333 : 11.703125 : JumpEnd); (10 : 11.703125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/Nurse/Nurse_Treatment" />
+      <nodes>
+        <classShapeMoniker Id="8a461a79-a3a0-4486-b943-a7842c2ff2f1" />
+        <classShapeMoniker Id="381cc77a-4da6-4d16-b64f-4fee3dddd856" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.5 : 12.3750025); (10 : 12.3750025)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/Patient/Patient_Treatment" />
+      <nodes>
+        <classShapeMoniker Id="4c3b0657-c0d5-4004-8f4e-2e5c314253a9" />
+        <classShapeMoniker Id="381cc77a-4da6-4d16-b64f-4fee3dddd856" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="2131d183-2a20-4b01-a1c9-7fefc3ed6640" absoluteBounds="9.5, 3.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/Report" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cb6d4e17-3a95-4332-ae44-7aa2c93fe4c8" absoluteBounds="9.515, 3.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.875 : 5.06174967447917); (8.35416666666667 : 5.06174967447917 : JumpStart); (8.52083333333333 : 5.06174967447917 : JumpEnd); (9.5 : 5.06174967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/LabIncharge/LabIncharge_Report" />
+      <nodes>
+        <classShapeMoniker Id="c4e4471e-f5ee-4e18-a273-6ef877528114" />
+        <classShapeMoniker Id="2131d183-2a20-4b01-a1c9-7fefc3ed6640" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.73437725 : 11.875); (6.73437725 : 11.1026025390625); (8.4375 : 11.1026025390625); (8.4375 : 4.71800017447917); (9.5 : 4.71800017447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/Patient/Patient_Report" />
+      <nodes>
+        <classShapeMoniker Id="4c3b0657-c0d5-4004-8f4e-2e5c314253a9" />
+        <classShapeMoniker Id="2131d183-2a20-4b01-a1c9-7fefc3ed6640" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="bce60b1a-83a6-4b19-a8f3-9330593f36f6" absoluteBounds="5.625, 16.375, 2, 1.9631982421875">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/Treatment_Room" />
+      <nestedChildShapes>
+        <elementListCompartment Id="23fb07a3-f33a-4280-90e1-18645e2f51c1" absoluteBounds="5.64, 16.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.59375 : 16.375); (7.59375 : 11.7343775); (10 : 11.7343775)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/Treatment_Room/Treatment_Room_Treatment" />
+      <nodes>
+        <classShapeMoniker Id="bce60b1a-83a6-4b19-a8f3-9330593f36f6" />
+        <classShapeMoniker Id="381cc77a-4da6-4d16-b64f-4fee3dddd856" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.5625 : 15.1843082682292); (6.5625 : 16.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/Patient/Patient_Treatment_Room" />
+      <nodes>
+        <classShapeMoniker Id="4c3b0657-c0d5-4004-8f4e-2e5c314253a9" />
+        <classShapeMoniker Id="bce60b1a-83a6-4b19-a8f3-9330593f36f6" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="e6726cfa-24b1-49e7-9ef5-9c25f10c463e" absoluteBounds="0.625, 6.25, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="311dc95d-5fa9-4670-bb6d-f330ddb37615" absoluteBounds="0.64000000000000012, 6.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.9062505 : 11.875); (5.9062505 : 8.20595540364583); (5.30208283333333 : 8.20595540364583 : JumpStart); (5.13541616666667 : 8.20595540364583 : JumpEnd); (4.45833333333333 : 8.20595540364583 : JumpStart); (4.29166666666667 : 8.20595540364583 : JumpEnd); (2.625 : 8.20595540364583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/Patient/Patient_Account" />
+      <nodes>
+        <classShapeMoniker Id="4c3b0657-c0d5-4004-8f4e-2e5c314253a9" />
+        <classShapeMoniker Id="e6726cfa-24b1-49e7-9ef5-9c25f10c463e" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="cfa6a9e0-7275-44f2-bcb1-6347669fbdee" absoluteBounds="6.375, 8.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/Payment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e6e6574-427e-4968-9cde-e018c01d8043" absoluteBounds="6.39, 8.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.9375 : 11.875); (6.9375 : 11.0401025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/Patient/Patient_Payment" />
+      <nodes>
+        <classShapeMoniker Id="4c3b0657-c0d5-4004-8f4e-2e5c314253a9" />
+        <classShapeMoniker Id="cfa6a9e0-7275-44f2-bcb1-6347669fbdee" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b3d64d70-ddc7-4b7a-b7b7-7dd873cc9e47" absoluteBounds="7, 1.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/TreatmentRoom_Record" />
+      <nestedChildShapes>
+        <elementListCompartment Id="298f1283-4cee-4cde-bce6-75d4775768a1" absoluteBounds="7.015, 2.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.5 : 13.5296541341146); (7.51041666666667 : 13.5296541341146 : JumpStart); (7.67708333333333 : 13.5296541341146 : JumpEnd); (7.6875 : 13.5296541341146); (7.6875 : 11.1651025390625); (8.4375 : 11.1651025390625); (8.4375 : 4.12424967447917); (8 : 4.12424967447917); (8 : 4.03049967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/Patient/Patient_TreatmentRoom_Record" />
+      <nodes>
+        <classShapeMoniker Id="4c3b0657-c0d5-4004-8f4e-2e5c314253a9" />
+        <classShapeMoniker Id="b3d64d70-ddc7-4b7a-b7b7-7dd873cc9e47" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d1b3d32d-85f5-4316-9434-ae90868e1405" absoluteBounds="3.875, 3.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/HospitalManagementSystemDataContext/Appointment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c58bd40-d7de-4ad4-b732-cd954e090371" absoluteBounds="3.89, 3.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.375 : 12); (4.375 : 5.6651025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/Doctor/Doctor_Appointment" />
+      <nodes>
+        <classShapeMoniker Id="9e0493b1-1dda-4e79-ba93-7806c96339b8" />
+        <classShapeMoniker Id="d1b3d32d-85f5-4316-9434-ae90868e1405" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 11.90625); (5.2187495 : 11.90625); (5.2187495 : 5.6651025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/HospitalManagementSystemDataContext/Patient/Patient_Appointment" />
+      <nodes>
+        <classShapeMoniker Id="4c3b0657-c0d5-4004-8f4e-2e5c314253a9" />
+        <classShapeMoniker Id="d1b3d32d-85f5-4316-9434-ae90868e1405" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

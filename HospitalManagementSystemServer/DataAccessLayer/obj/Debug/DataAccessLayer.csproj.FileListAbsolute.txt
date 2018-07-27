@@ -1,0 +1,30 @@
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\HospitalManagementSystem.mdf
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\HospitalManagementSystem_log.ldf
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\BusinessObject.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\BusinessObject.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\nkaru\Desktop\Karthik\Masters\Summer\Summer1\AdvanceProject\Hospital Management System\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\HospitalManagementSystem.mdf
+C:\Users\nkaru\Desktop\Karthik\Masters\Summer\Summer1\AdvanceProject\Hospital Management System\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\HospitalManagementSystem_log.ldf
+C:\Users\nkaru\Desktop\Karthik\Masters\Summer\Summer1\AdvanceProject\Hospital Management System\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\nkaru\Desktop\Karthik\Masters\Summer\Summer1\AdvanceProject\Hospital Management System\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\nkaru\Desktop\Karthik\Masters\Summer\Summer1\AdvanceProject\Hospital Management System\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\nkaru\Desktop\Karthik\Masters\Summer\Summer1\AdvanceProject\Hospital Management System\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\BusinessObject.dll
+C:\Users\nkaru\Desktop\Karthik\Masters\Summer\Summer1\AdvanceProject\Hospital Management System\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\BusinessObject.pdb
+C:\Users\nkaru\Desktop\Karthik\Masters\Summer\Summer1\AdvanceProject\Hospital Management System\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\nkaru\Desktop\Karthik\Masters\Summer\Summer1\AdvanceProject\Hospital Management System\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\nkaru\Desktop\Karthik\Masters\Summer\Summer1\AdvanceProject\Hospital Management System\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\HospitalManagementSystem.mdf
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\HospitalManagementSystem_log.ldf
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\BusinessObject.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\bin\Debug\BusinessObject.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
