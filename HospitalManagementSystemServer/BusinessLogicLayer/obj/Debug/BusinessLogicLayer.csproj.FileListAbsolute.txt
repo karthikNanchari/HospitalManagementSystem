@@ -1,0 +1,28 @@
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\HospitalManagementSystem.mdf
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\HospitalManagementSystem_log.ldf
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\BusinessObject.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\DataAccessLayerFactory.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\BusinessObject.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\DataAccessLayerFactory.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\HospitalManagementSystem.mdf
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\HospitalManagementSystem_log.ldf
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\BusinessObject.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\DataAccessLayerFactory.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\BusinessObject.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\DataAccessLayerFactory.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojResolveAssemblyReference.cache
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Users\nkaru\Desktop\Karthik\Project\Hospital Management System Server\HospitalManagementSystemServer\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb

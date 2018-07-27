@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DataAccessLayer",
+    "\\HospitalManagementSystemServer",
+    "\\HospitalManagementSystemServer\\Controllers"
+  ],
+  "SelectedNode": "\\HospitalManagementSystemServer\\Controllers\\PatientController.cs",
+  "PreviewInSolutionExplorer": false
+}

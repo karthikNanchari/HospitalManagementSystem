@@ -1,0 +1,5 @@
+c:\users\nkaru\onedrive\documents\visual studio 2017\Projects\HospitalManagementSystemServer\BusinessObject\bin\Debug\BusinessObject.dll
+c:\users\nkaru\onedrive\documents\visual studio 2017\Projects\HospitalManagementSystemServer\BusinessObject\bin\Debug\BusinessObject.pdb
+c:\users\nkaru\onedrive\documents\visual studio 2017\Projects\HospitalManagementSystemServer\BusinessObject\obj\Debug\BusinessObject.dll
+c:\users\nkaru\onedrive\documents\visual studio 2017\Projects\HospitalManagementSystemServer\BusinessObject\obj\Debug\BusinessObject.pdb
+C:\Users\nkaru\OneDrive\Documents\Visual Studio 2017\Projects\HospitalManagementSystemServer\BusinessObject\obj\Debug\BusinessObject.csprojResolveAssemblyReference.cache
